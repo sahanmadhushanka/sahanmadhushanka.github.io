@@ -20,18 +20,13 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Flet
+      - name: Install Latest Flet
         run: |
-          pip install flet==0.85.3
+          pip install flet
 
       - name: Build Web Static Files
         run: |
-          yes | flet build web --module-name home --web-renderer html
-          sed -i 's|<base href="/">|<base href="./">|g' build/web/index.html
-          
-          # Flet වල JavaScript එක බ්‍රවුසර් එකෙන් බ්ලොක් කරන ලෙඩේ සුව කිරීම:
-          sed -i 's|<base href="/">|<base href="./">|g' build/web/index.html
-          sed -i 's|type="text/javascript"|type="application/javascript"|g' build/web/index.html
+          yes | flet build web --module-name home
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
