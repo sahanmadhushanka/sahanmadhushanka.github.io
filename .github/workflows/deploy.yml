@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Web Static Files
         run: |
-          yes | flet build web --module-name home
+          yes | flet build web --module-name home --base-url ./
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
