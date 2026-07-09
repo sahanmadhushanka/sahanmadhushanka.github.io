@@ -28,7 +28,10 @@ jobs:
         run: |
           yes | flet build web --module-name home
           sed -i 's|<base href="/">|<base href="/myportfolio/">|g' build/web/index.html
-          cp -r build/web/assets build/web/myportfolio 2>/dev/null || true
+          
+          # Dual assets path එක හරියටම ක්‍රියාත්මක කිරීමට:
+          mkdir -p build/web/myportfolio
+          cp -r build/web/assets build/web/myportfolio/ 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
