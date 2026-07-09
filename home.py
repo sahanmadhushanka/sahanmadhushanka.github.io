@@ -112,5 +112,5 @@ def main(page: ft.Page):
     page.add(navbar, hero_section, logos_section)
 
 # බ්‍රවුසර් එකේ ප්‍රශ්නයක් නම් කෙලින්ම Desktop Window එකෙන්ම ඕපන් වෙන්න හැදුවා
-ft.app(target=main)
-ft.app(target=main, view=ft.WEB_BROWSER)
+# පරණ පේළි දෙකම මකලා මේ එක පේළිය විතරක් දාන්න:
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
