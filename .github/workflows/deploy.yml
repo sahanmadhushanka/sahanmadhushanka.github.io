@@ -28,7 +28,7 @@ jobs:
         run: |
           yes | flet build web --module-name home
           sed -i 's|<base href="/">|<base href="/myportfolio/">|g' build/web/index.html
-          sed -i 's|/assets/|/myportfolio/assets/|g' build/web/flutter.js
+          cp -r build/web/assets build/web/myportfolio 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
