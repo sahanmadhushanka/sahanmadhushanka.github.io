@@ -1,35 +1,31 @@
-name: Deploy Flet App to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-
-permissions:
-  contents: write
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v4
+      
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-
-      - name: Install Latest Flet
-        run: |
-          pip install flet
-
-      - name: Build Web Static Files
-        run: |
-          yes | flet build web --module-name home --base-url ./
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+          python-version: '3.12'
+      
+      - name: Install Flet
+        run: pip install flet
+      
+      - name: Build web app
+        run: flet build web --base-url /sahanmadhushanka.github.io --route-url-strategy hash
+      
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: build/web
-          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
+          publish_branch: gh-pages
+          force_orphan: true
