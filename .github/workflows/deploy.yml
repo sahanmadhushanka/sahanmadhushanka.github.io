@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Web Static Files
         run: |
-          flet build web home.py --base-url /${{ github.event.repository.name }}/
+          flet build web home.py --base-url /${{ github.event.repository.name }}/ --no-interactive
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
