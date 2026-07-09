@@ -26,7 +26,8 @@ jobs:
 
       - name: Build Web Static Files
         run: |
-          yes | flet build web --module-name home
+          yes | flet build web --module-name home --web-renderer html
+          sed -i 's|<base href="/">|<base href="./">|g' build/web/index.html
           
           # Flet වල JavaScript එක බ්‍රවුසර් එකෙන් බ්ලොක් කරන ලෙඩේ සුව කිරීම:
           sed -i 's|<base href="/">|<base href="./">|g' build/web/index.html
