@@ -26,7 +26,8 @@ jobs:
 
       - name: Build Web Static Files
         run: |
-          yes | flet build web --module-name home --base-url /${{ github.event.repository.name }}/
+          yes | flet build web --module-name home
+          sed -i 's|<base href="/">|<base href="/myportfolio/">|g' build/web/index.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
