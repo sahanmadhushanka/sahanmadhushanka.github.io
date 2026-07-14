@@ -1,0 +1,83 @@
+/* About & Skills Section ස්ටයිල් එක */
+.about-skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 10%;
+    background: #060b14; /* තද කළු/නිල් පාට පසුබිමක් */
+    color: #fff;
+}
+
+.about-box, .skills-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-box h2, .skills-box h2 {
+    font-family: 'Russo One', sans-serif;
+    color: #00ffdd;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about-box p {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Skills Tags වල ස්ටයිල් එක */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-tags span {
+    background: rgba(0, 255, 221, 0.1);
+    border: 1px solid rgba(0, 255, 221, 0.3);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #00ffdd;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+    background: #00ffdd;
+    color: #000;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 221, 0.4);
+}
+
+/* Footer ස්ටයිල් එක */
+.main-footer {
+    background: #03070d;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #111;
+}
+
+.footer-socials {
+    margin-bottom: 20px;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #00ffdd;
+}
+
+.main-footer p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}

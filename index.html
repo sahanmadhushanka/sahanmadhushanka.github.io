@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahan Madhushanka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about_home.css">
+    <link rel="stylesheet" href="skil_home.css">
+    <link rel="stylesheet" href="service_home.css">
+    <link rel="stylesheet" href="footer_home.css">
+
+    <!-- Mobile icon එකට Font Awesome එකතු කිරීම -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header Area -->
+    <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+            <!-- Mobile එකේදී විතරක් උඩින්ම පේන Close Button එක සහ MENU Title එක -->
+            <div class="menu-header">
+                <span class="menu-title">MENU</span>
+                <label for="check" class="closebtn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            
+            <!-- Icons සමඟ Menu Items -->
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT ME</a></li>
+            <li><a href="researches.html"><i class="fas fa-search"></i> RESEARCHES</a></li>
+            <li><a href="qualification.html"><i class="fas fa-bookmark"></i> QUALIFICATION</a></li>
+            <li><a href="services.html"><i class="fas fa-cog"></i> SERVICES</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i> CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-section"></div>
+
+    <!-- Welcome Banner Section -->
+    <div class="banner" id="home">
+        <canvas id="mouseCanvas"></canvas>
+        <div class="banner-content">
+            <div class="banner-text">
+                <h2> Sahan Madhushanka </h2>
+                <span>I am a <span class="typing-text"></span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔥 About Me Section Start -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- වම් පැත්ත: Professional Photo -->
+            <div class="about-image">
+                <img src="images/my2_bg.jpeg" alt="Sahan Madhushanka">
+                <div class="image-border"></div>
+            </div>
+
+            <!-- දකුණු පැත්ත: විස්තර ටික -->
+            <div class="about-content">
+                <span class="sub-title">WHO I AM</span>
+                <h2>About Me</h2>
+                
+                <p class="desc">
+                    I am a passionate <strong>Data Science Undergraduate Student</strong> and <strong>Software Developer</strong> based in Sri Lanka. I love bridging the gap between data insights and interactive user experiences. 
+                </p>
+                
+                <p class="desc">
+                    With a strong technical background in <strong>Python</strong> and transitioning into <strong>Java</strong>, I specialize in building functional desktop and web applications. I have hands-on experience developing practical solutions, ranging from database-driven <strong>Hotel Booking Systems</strong> using Tkinter and SQLite to advanced computer vision projects like <strong>3D Virtual Try-on systems</strong> using MediaPipe and Arduino.
+                </p>
+
+                <!-- 💡 නිවැරදි කළ නියොන් බෝඩර් කාඩ්ස් ව්‍යුහය -->
+                <div class="about-cards">
+                    <!-- 1 වන කාඩ් එක: Education -->
+                    <div class="box">
+                        <div class="a-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <p>Data Science Undergraduate<br>SLTC Research University</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 වන කාඩ් එක: Projects -->
+                    <div class="box">
+                        <div class="a-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Projects</h3>
+                            <p>Tkinter, Flet, MediaPipe & SQLite Applications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CV එක ඩවුන්ලෝඩ් කරන්න හෝ Contact පිටුවට යන්න බටන් එකක් -->
+                <a href="contact.html" class="btn-contact">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section End -->
+    <!-- 🔥 My Skills Section Start -->
+    <section class="skills-section">
+        <span class="sub-title">MY TECH STACK</span>
+        <h2>My Skills</h2>
+        
+        <div class="skills-grid">
+            <!-- 💡 1. Python -->
+            <div class="skills-box">
+                <div class="skills-card">
+                    <i class="fab fa-python skills-icon"></i>
+                    <h3>Python Programming</h3>
+                    <p>Advanced, programming, and analytics with Python and relevant libraries.</p>
+                </div>
+            </div>
+
+            <!-- 💡 2. Java -->
+            <div class="skills-box">
+                <div class="skills-card">
+                    <i class="fab fa-java skills-icon"></i>
+                    <h3>Java Development</h3>
+                    <p>Java programming, integrating with databases and handling assets.</p>
+                </div>
+            </div>
+
+            <!-- 💡 3. SQL -->
+            <div class="skills-box">
+                <div class="skills-card">
+                    <i class="fas fa-database skills-icon"></i>
+                    <h3>SQL Databases</h3>
+                    <p>Database schema design, data manipulation, and asset management.</p>
+                </div>
+            </div>
+
+            <!-- 💡 4. Photoshop (🔥 User Request) -->
+            <div class="skills-box">
+                <div class="skills-card">
+                    <i class="fas fa-palette skills-icon"></i>
+                    <h3>Adobe Editing</h3>
+                    <p>Advanced image manipulation, retouching, and asset creation using Photoshop.</p>
+                </div>
+            </div>
+
+            <!-- 💡 5. Data Analysis -->
+            <div class="skills-box">
+                <div class="skills-card">
+                    <i class="fas fa-chart-line skills-icon"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Detailed data analysis, using tools like Pandas, and working with spreadsheets.</p>
+                </div>
+            </div>
+
+            <!-- 💡 6. Web Development -->
+            <div class="skills-box">
+                <div class="skills-card">
+                    <i class="fas fa-code skills-icon"></i>
+                    <h3>Web Frontend</h3>
+                    <p>Responsive, interactive web frontends using modern HTML, CSS, and JS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+     <!-- 🔥 Services Section Start -->
+    <section class="services-section">
+        <span class="sub-title">WHAT I OFFER</span>
+        <h2>My Services</h2>
+        
+        <div class="services-grid">
+            <!-- 🎨 1. Adobe Photoshop Editing Card -->
+            <a href="services.html" class="services-box">
+                <div class="services-card">
+                    <i class="fas fa-paint-brush services-icon"></i>
+                    <h3>Adobe Photoshop Editing</h3>
+                    <p>Professional visual content creation including custom flyer design, high-quality image upscaling, creative image editing, and personalized invitation cards.</p>
+                    <span class="read-more">View All Services <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- 💻 2. Web Development Card -->
+            <a href="services.html" class="services-box">
+                <div class="services-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern web applications, customized frontend solutions, and smart AI-integrated websites tailored to user requirements.</p>
+                    <span class="read-more">View All Services <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- 🔥 Footer Section Start -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Social Media Icons කොටස -->
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <!-- Copyright Text කොටස -->
+            <p class="copyright-text">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* About Section Base */
+.about-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #000213; 
+    padding: 100px 10%;
+    color: #fff;
+    z-index: 5;
+
+
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* වම් පැත්තේ Photo එකේ ස්ටයිල් */
+.about-image {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    filter: grayscale(20%); /* ලාවට professional ගතියක් දෙන්න */
+    transition: all 0.4s ease;
+}
+
+/* ෆොටෝ එක යටින් තියෙන Neon Border Frame එක */
+.about-image .image-border {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #00ffdd;
+    border-radius: 20px;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+/* මවුස් එක ෆොටෝ එක උඩට ගෙනිච්චම වෙන සුපිරි ඉෆෙක්ට් එක */
+.about-image:hover img {
+    transform: translate(-10px, -10px);
+    filter: grayscale(0%);
+}
+
+.about-image:hover .image-border {
+    transform: translate(10px, 10px);
+    background: rgba(0, 255, 221, 0.05);
+}
+
+/* 🎯 දකුණු පැත්තේ විස්තර වල ස්ටයිල් (අකුරු සහ බටන් වමට පෙළගැස්වීම) */
+.about-content {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 🔥 බටන් එක සහ අනෙකුත් දේවල් වමට තබා ගැනීමට */
+    text-align: left; /* 🔥 අකුරු වමට පෙළගැස්වීම */
+}
+
+.about-content .sub-title {
+    color: #00ffdd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.about-content .desc {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify; /* ඡේදයේ දෙපැත්තම ලස්සනට සමපාත කිරීම */
+}
+
+.about-content strong {
+    color: #00ffdd; /* වැදගත් වචන Neon පාටින් කැපිලා පේන්න */
+}
+
+/* --- 💡 කැරකෙන නියොන් බෝඩර් කාඩ් ස්ටයිල් --- */
+.about-cards {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* පිටත කාඩ් එක */
+.box {
+    position: relative;
+    width: 280px;
+    height: 160px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* නියොන් Cyan ලයින් එක */
+.box::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 350px;
+    background: linear-gradient(180deg, transparent, #ff00bb, #ffd500);
+    animation: animateCardBorder 4s linear infinite;
+}
+
+/* නියොන් Blue ලයින් එක */
+.box::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 350px;
+    background: linear-gradient(180deg, transparent, #ffee00, #ff0090);
+    animation: animateCardBorder 4s linear infinite;
+    animation-delay: -2s;
+}
+
+@keyframes animateCardBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 🎯 කාඩ් එක ඇතුළත විස්තර (අයිකන් සහ අකුරු වමට සෙට් කිරීම) */
+.a-card {
+    position: absolute;
+    inset: 2px;
+    background: #0c1322; /* තද නිල්/කළු ඇතුලත පසුබිම */
+    border-radius: 13px;
+    padding: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* 🔥 කාඩ් එක ඇතුලේ අයිකන් සහ අකුරු වමට ගැනීම */
+    text-align: left;
+}
+
+.a-card i {
+    color: #00ffdd;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.a-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a-card p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* බටන් එකේ ස්ටයිල් */
+.btn-contact {
+    display: inline-block;
+    padding: 12px 35px;
+    background: #00ffdd;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 255, 221, 0.2);
+    margin-top: 15px; /* 💡 කාඩ් වලට යටින් ලස්සන ඉඩක් තැබීමට */
+    align-self: flex-start; /* 🔥 බටන් එක 100% වමට ස්ථාවර කිරීම */
+}
+
+.btn-contact:hover {
+    background: transparent;
+    color: #00ffdd;
+    border: 2px solid #00ffdd;
+    box-shadow: 0 5px 25px rgba(0, 255, 221, 0.4);
+    transform: translateY(-3px);
+}
+
+/* 💡 බැනර් එකේ යට කොටස Smooth Fade කරන Overlay එක */
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: -150px; 
+    left: 0;
+    width: 100%;
+    height: 150px;
+    /* background: linear-gradient(to top, #060b14 0%, rgba(6, 11, 20, 0.8) 30%, transparent 100%); */
+    pointer-events: none;
+    z-index: 6;
+
+    border-bottom: 2px solid #00ffdd; 
+    filter: drop-shadow(0px 0px 8px #00ffdd);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .about-image {
+        margin: 0 auto;
+    }
+    .about-content {
+        align-items: center; /* මොබයිල් වලදී මැදට පෙළගැස්වීම */
+        text-align: center;
+    }
+    .about-content .desc {
+        text-align: center;
+    }
+    .about-cards {
+        justify-content: center;
+    }
+    .btn-contact {
+        align-self: center;
+    }
+}
