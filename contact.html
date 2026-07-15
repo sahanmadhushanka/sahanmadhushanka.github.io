@@ -3,42 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Sahan Madhushanka</title>
-    
-    <link rel="stylesheet" href="style.css">
+    <title>Contact | Sahan Madhushanka</title>
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background: #060b14; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 0;">
 
-    <nav class="header">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+    <!-- 🚀 Navigation Bar Start (ඔයාගේ index.html එකේ තියෙන Navbar එක මෙතනට දාගන්න) -->
+    <nav class="navbar" >
 
-        <ul>
-            <div class="menu-header">
-                <span class="menu-title">MENU</span>
-                <label for="check" class="closebtn">
-                    <i class="fas fa-times"></i>
-                </label>
-            </div>
-            
-            <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT ME</a></li>
-            <li><a href="researches.html"><i class="fas fa-search"></i> RESEARCHES</a></li>
-            <li><a href="qualification.html"><i class="fas fa-bookmark"></i> QUALIFICATION</a></li>
-            <li><a href="services.html"><i class="fas fa-cog"></i> SERVICES</a></li>
-            <li><a href="contact.html" class="active"><i class="fas fa-phone"></i> CONTACT</a></li>
-        </ul>
+        <div class="logo" style="font-family: 'Russo One', sans-serif; font-size: 24px; color: #fff;">
+            SAHAN<span style="color: #00ffdd;">.</span>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 30px;">
+            <a href="index.html" style="color: #aaa; text-decoration: none; font-weight: 500;">Home</a>
+            <a href="about.html" style="color: #aaa; text-decoration: none; font-weight: 500;">About</a>
+            <a href="services.html" style="color: #aaa; text-decoration: none; font-weight: 500;">Services</a>
+            <a href="researches.html" style="color: #aaa; text-decoration: none; font-weight: 500;">Researches</a>
+            <a href="contact.html" style="color: #00ffdd; text-decoration: none; font-weight: 500;">Contact</a>
+        </div>
     </nav>
+    <!-- 🚀 Navigation Bar End -->
 
-    <div class="content-section">
-        <h1 style="color: #00e5ff; text-align: center; margin-top: 50px;">ABOUT ME</h1>
-        <p style="color: #fff; text-align: center; max-width: 600px; margin: 20px auto;">
-            මෙතනට ඔයාගේ විස්තර ටික ලස්සනට ඇතුලත් කරන්න මල්ලි...
-        </p>
-    </div>
+    <!-- ✉️ Contact Section Start -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- <span class="sub-title">GET IN TOUCH</span> -->
+            <h2>Let's Build Something Together</h2>
+            <p class="contact-intro">Feel free to reach out for collaborations, project inquiries, or just to say hello.</p>
+
+            <div class="contact-wrapper">
+                <!-- වම් පැත්ත: Contact Info Details -->
+                <div class="contact-info">
+                    <div class="info-row">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Me</h4>
+                            <!-- 💡 මල්ලි, මෙතනට ඔයාගේ කැම්පස් හෝ පෞද්ගලික ඊමේල් එක දාන්න -->
+                            <p>sahanmadushanka678@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Me</h4>
+                            <p>+94 76 248 0782</p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- දකුණු පැත්ත: Minimalist Message Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ✉️ Contact Section End -->
+
+    <!--  Octopus Footer Start -->
+    <footer class="main-footer" style="background: #060b14; padding: 40px 10%; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.05); box-sizing: border-box;">
+        <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <div class="footer-socials" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon" style="color: #aaa; font-size: 18px; transition: 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+94762480782" target="_blank" class="social-icon" style="color: #aaa; font-size: 18px; transition: 0.3s;"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon" style="color: #aaa; font-size: 18px; transition: 0.3s;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon" style="color: #aaa; font-size: 18px; transition: 0.3s;"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/YOUR_PROFILE_LINK" target="_blank" class="social-icon" style="color: #aaa; font-size: 18px; transition: 0.3s;"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sahanmadushanka" target="_blank" class="social-icon" style="color: #aaa; font-size: 18px; transition: 0.3s;"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright-text" style="color: #666; font-size: 14px; margin: 0;">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

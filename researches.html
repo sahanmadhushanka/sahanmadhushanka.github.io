@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Sahan Madhushanka</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="researches.css">
+    <link rel="stylesheet" href="footer_home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -34,11 +38,69 @@
     </nav>
 
     <div class="content-section">
-        <h1 style="color: #00e5ff; text-align: center; margin-top: 50px;">ABOUT ME</h1>
-        <p style="color: #fff; text-align: center; max-width: 600px; margin: 20px auto;">
-            මෙතනට ඔයාගේ විස්තර ටික ලස්සනට ඇතුලත් කරන්න මල්ලි...
-        </p>
+<!-- 🔬 Research Section Start -->
+    <section class="research-section">
+        <div class="research-container">
+            <!-- <span class="sub-title">ACADEMIC WORK</span> -->
+            <h2>Research & Publications</h2>
+            <p class="research-intro-text">
+                Exploring the intersections of Data Science, Machine Learning, and Computer Vision to solve real-world challenges.
+            </p>
+
+            <div class="research-list">
+                <!-- 📄 Paper 1: Real-time 3D Body Measurement -->
+                <div class="research-row">
+                    <div class="research-meta">
+                        <span class="research-badge ongoing">Ongoing Research</span>
+                        <span class="research-domain">Computer Vision</span>
+                    </div>
+                    <div class="research-content">
+                        <h3>Real-Time 3D Human Body Landmarks Capture for Virtual Try-On Systems</h3>
+                        <p>An empirical study utilizing MediaPipe and depth-estimation frameworks to capture highly accurate full-body measurements for tailoring and e-commerce applications, eliminating the need for expensive hardware scanners.</p>
+                        <div class="research-links">
+                            <a href="#" class="res-link"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" class="res-link disabled"><i class="fas fa-file-pdf"></i> Paper (Coming Soon)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 📄 Paper 2: Predictive Analytics / Data Science -->
+                <div class="research-row">
+                    <div class="research-meta">
+                        <span class="research-badge planned">Concept</span>
+                        <span class="research-domain">Data Analytics</span>
+                    </div>
+                    <div class="research-content">
+                        <h3>Predictive Modeling on Consumer Trends in Sri Lankan Tourism Industry</h3>
+                        <p>Analyzing localized dataset patterns to forecast travel preferences and vehicle rental demands using machine learning regression models, optimized for local tourism stakeholders.</p>
+                        <div class="research-links">
+                            <a href="#" class="res-link"><i class="fab fa-github"></i> Proposal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
+
+    <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Social Media Icons කොටස (LinkedIn & GitHub ඇතුළත්ව) -->
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <!-- 🔗 LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/sahan-madhushanka-8b9639414" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <!-- 🐙 GitHub Button -->
+            <a href="https://github.com/sahanmadhushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        
+        <!-- Copyright Text කොටස -->
+        <p class="copyright-text">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>

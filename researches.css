@@ -1,0 +1,174 @@
+/* --- 🔬 Research Section Styles --- */
+
+.research-section {
+    width: 100%;
+    background: #060b14;
+    padding: 120px 10% 100px 10%;
+    color: #fff;
+    z-index: 5;
+}
+
+.research-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.research-section .sub-title {
+    color: #00ffdd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.research-section h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.research-intro-text {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Research Rows Wrapper */
+.research-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* තනි පේළියක Layout එක */
+.research-row {
+    display: flex;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.research-row:last-child {
+    border-bottom: none;
+}
+
+/* වම් පැත්තේ තියෙන Meta Data (Status badges, domains) */
+.research-meta {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+/* Badges */
+.research-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    width: fit-content;
+}
+
+.research-badge.ongoing {
+    background: rgba(0, 255, 221, 0.1);
+    color: #00ffdd;
+    border: 1px solid rgba(0, 255, 221, 0.2);
+}
+
+.research-badge.planned {
+    background: rgba(255, 0, 127, 0.1);
+    color: #ff007f;
+    border: 1px solid rgba(255, 0, 127, 0.2);
+}
+
+.research-domain {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* දකුණු පැත්තේ තියෙන Content එක */
+.research-content {
+    flex: 1;
+}
+
+.research-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+.research-content p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Links */
+.research-links {
+    display: flex;
+    gap: 20px;
+}
+
+.res-link {
+    color: #00ffdd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.res-link:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 255, 221, 0.6);
+}
+
+.res-link.disabled {
+    color: #555;
+    pointer-events: none; /* ක්ලික් කරන්න බැරි කරන්න */
+}
+
+/* 🔥 Hover Effect: මුළු පේළියම ලාවට Glow වීම */
+.research-row:hover {
+    padding-left: 15px;
+}
+
+.research-row:hover .research-content h3 {
+    color: #00ffdd;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .research-row {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0;
+    }
+    .research-meta {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .research-content h3 {
+        font-size: 18px;
+    }
+}
+
+

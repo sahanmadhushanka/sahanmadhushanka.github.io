@@ -1,0 +1,188 @@
+/* --- ✉️ Contact Section Styles --- */
+
+.contact-section {
+    width: 100%;
+    background: #060b14;
+    padding: 140px 10% 100px 10%;
+    color: #fff;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-section .sub-title {
+    color: #00ffdd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-section h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-intro {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Flex Wrapper for 2-Columns */
+.contact-wrapper {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+/* Left Column: Info */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-row i {
+    font-size: 24px;
+    color: #00ffdd;
+    width: 50px;
+    height: 50px;
+    background: #0e1628;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-row h4 {
+    font-size: 16px;
+    color: #888;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.info-row p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Right Column: Form */
+.contact-form-container {
+    flex: 1.3;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    background: #0e1628;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 16px 20px;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+/* 🔥 Focus Effect: Field එකක් ඇතුල ක්ලික් කරද්දී Neon Glow වීම */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #00ffdd;
+    box-shadow: 0 0 15px rgba(0, 255, 221, 0.2);
+    background: #121c33;
+}
+
+/* Form Submit Button */
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 35px;
+    background: transparent;
+    border: 2px solid #00ffdd;
+    color: #00ffdd;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.submit-btn i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #00ffdd;
+    color: #060b14;
+    box-shadow: 0 0 20px #00ffdd;
+}
+
+.submit-btn:hover i {
+    transform: translate(4px, -4px); /* Plane එක උඩට සහ දකුණට පියෑඹීම */
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contact-info {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 100px 5% 60px 5%;
+    }
+    .contact-section h2 {
+        font-size: 32px;
+    }
+    .info-row p {
+        font-size: 15px;
+    }
+}
+

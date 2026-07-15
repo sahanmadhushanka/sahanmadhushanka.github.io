@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #01001b;
+    background: #000000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,6 +45,7 @@ body{
     font-weight: bold;
     position: relative;
     transition: color 0.4s ease;
+    top: -15px;
     
     width: 170px; 
     text-align: center; 
@@ -148,6 +149,7 @@ body{
         padding-bottom: 20px;
         margin-bottom: 15px;
         border-bottom: 2px solid #00ffbb; 
+        
     }
 
     .menu-title {
@@ -207,4 +209,17 @@ body{
     #check:checked ~ ul{
         left: 0;
     }
+}
+
+.navbar{
+    position: fixed; 
+    width: 100%; top: 0; z-index: 100; 
+    background: rgba(6, 11, 20, 0.9); 
+    padding: 20px 10%; 
+    display: flex; 
+    justify-content: 
+    space-between; 
+    align-items: center; 
+    box-sizing: border-box; 
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }

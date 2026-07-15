@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Sahan Madhushanka</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="qualification.css">
+    <link rel="stylesheet" href="footer_home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -34,11 +38,104 @@
     </nav>
 
     <div class="content-section">
-        <h1 style="color: #00e5ff; text-align: center; margin-top: 50px;">Qulification</h1>
-        <p style="color: #fff; text-align: center; max-width: 600px; margin: 20px auto;">
-            මෙතනට ඔයාගේ විස්තර ටික ලස්සනට ඇතුලත් කරන්න මල්ලි...
-        </p>
+<!-- 🎓 Qualifications Section Start -->
+<section class="qualifications-section">
+    <div class="qualifications-container">
+        <span class="sub-title">MY JOURNEY</span>
+        <h2>Education & Credentials</h2>
+
+        <!-- 📸 75% Center Slideshow for Certificates -->
+        <div class="certificate-slider-wrapper">
+            <div class="certificate-slider">
+                <!-- Slide 1: SLTC Master Design Certificate -->
+                <div class="slide active">
+                    <img src="assets/images/cert_master_design.jpg" alt="SLTC Master Design Certificate">
+                    <!-- <div class="slide-caption">SLTC Master Design Competition - Winner Certificate</div> -->
+                </div>
+
+                <!-- Slide 2: Info Tech IT/Software Course -->
+                <div class="slide">
+                    <img src="assets/images/cert_infotech.jpg" alt="Info Tech IT Certificate">
+                    <div class="slide-caption">IT & Software Engineering (Python, HTML, CSS, PHP, SQL, Arduino) - Info Tech</div>
+                </div>
+
+                <!-- Slide 3: Oslo Campus Graphic Design Diploma -->
+                <div class="slide">
+                    <img src="assets/images/cert_oslo_graphic.jpg" alt="Oslo Campus Graphic Design Certificate">
+                    <div class="slide-caption">Diploma in Graphic Design - Oslo Campus</div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+
+                <!-- Dots Indicating Slides -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 📜 Timeline (අධ්‍යාපන ඉතිහාසය) -->
+        <div class="timeline" style="margin-top: 60px;">
+            <!-- 🏫 1. SLTC Campus (Data Science & Winner) -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025 - Present</div>
+                <div class="timeline-content">
+                    <h3>B.Sc. (Hons) in Data Science</h3>
+                    <span class="institution">Sri Lanka Technological Campus (SLTC)</span>
+                    <p>Pursuing specialized higher education in Data Science, focusing on analytics, statistics, and machine learning models. </p>
+                </div>
+            </div>
+
+            <!-- 💻 2. Info Tech (A/L ඉවර වෙලා කරපු IT එක) -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">After A/Ls</div>
+                <div class="timeline-content">
+                    <h3>IT & Foundations of Software Engineering</h3>
+                    <span class="institution">Info Tech Campus</span>
+                    <p>Completed hands-on software development foundations focusing on Python, HTML, CSS, PHP, SQL databases, and Arduino hardware programming.</p>
+                </div>
+            </div>
+
+            <!-- 🎨 3. Oslo Campus (Graphic Design) -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Professional Development</div>
+                <div class="timeline-content">
+                    <h3>Diploma in Graphic Design</h3>
+                    <span class="institution">Oslo Campus</span>
+                    <p>Earned a professional diploma in visual design principles, mastering industry-standard creative tools for print and digital media.</p>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+<!-- Qualifications Section End -->
+</div>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <!-- Social Media Icons කොටස (LinkedIn & GitHub ඇතුළත්ව) -->
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <!-- 🔗 LinkedIn Button -->
+            <a href="https://linkedin.com/in/YOUR_PROFILE_LINK" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <!-- 🐙 GitHub Button -->
+            <a href="https://github.com/sahanmadushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        
+        <!-- Copyright Text කොටස -->
+        <p class="copyright-text">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>

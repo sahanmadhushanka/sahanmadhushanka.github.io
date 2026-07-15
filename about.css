@@ -1,83 +1,448 @@
-/* About & Skills Section ස්ටයිල් එක */
-.about-skills-section {
+/* --- 👤 About Intro Section Styles --- */
+
+.about-intro-section {
+    position: relative;
+    width: 100%;
+    background: #010019; /* මුළු සයිට් එකේම යන පසුබිම් වර්ණය */
+    padding: 100px 10%;
+    color: #fff;
+    z-index: 5;
+}
+
+.about-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 80px 10%;
-    background: #060b14; /* තද කළු/නිල් පාට පසුබිමක් */
+    align-items: center;
+    gap: 60px; 
+    border-radius: 12px;
+
+}
+
+/* Image Box Styling */
+.about-img-box {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* .img-wrapper {
+    width: 100%;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+} */
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* --- 🛸 Premium Rotating Border Animation Card --- */
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    background: #ffffff; /* කාඩ් එකේ ඇතුලත තද නිල්/කළු පසුබිම */
+    border-radius: 15px;
+    padding: 5px;
+    color: #fff;
+    overflow: hidden; /* 💡 වැදගත්: වටේ කැරකෙන පාට කෑල්ල කාඩ් එකෙන් එලියට පේන එක වලක්වන්න */
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+/* 💡 කාඩ් එක ඇතුලේ තියෙන අන්තර්ගතය වටේ කැරකෙන ඉරට යට වෙන්න නොදී උඩින් තියාගන්න */
+.img-wrapper * {
+    z-index: 3;
+}
+
+/* 🎨 බෝඩර් එක වටේ කැරකෙන පාට පටිය (Neon Gradient) */
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* 💡 ඔයාට කැමති Neon පාට දෙකක් මෙතනට දාන්න පුළුවන් (Cyan සහ Pink) */
+    background: conic-gradient(
+        transparent, 
+        transparent, 
+        transparent, 
+        #eeff00, /* Neon Cyan */
+        #ff007f  /* Neon Pink */
+    );
+    animation: rotateBorder 4s linear infinite; /* කැරකෙන වේගය (තත්පර 4) */
+    z-index: 2;
+}
+
+/* 🖤 කාඩ් එකේ මැද කොටස කළු කරලා සිහින් බෝඩර් එකක් විතරක් ඉතිරි කරන Mask එක */
+.img-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 4px; /* 💡 මේකෙන් තමයි බෝඩර් එකේ මහත තීරණය වෙන්නේ (3px සිහින් බෝඩර් එකක්) */
+    background: #000000; /* කාඩ් එකේ පසුබිම් පාටමයි */
+    border-radius: 12px;
+    z-index: 2;
+}
+
+/* 🔄 බෝඩර් එක 360°ක් කරකවන Animation එක */
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Details Box Styling */
+.about-details-box {
+    flex: 1.5;
+}
+
+.about-details-box .sub-title {
+    color: #00ffdd; /* Neon Cyan color */
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about-details-box h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 42px;
+    margin-bottom: 25px;
     color: #fff;
 }
 
-.about-box, .skills-box {
-    flex: 1;
-    min-width: 300px;
-}
-
-.about-box h2, .skills-box h2 {
-    font-family: 'Russo One', sans-serif;
-    color: #00ffdd;
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-.about-box p {
-    color: #ccc;
-    line-height: 1.8;
+.bio-text {
+    color: #aaaaaa;
     font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
 }
 
-/* Skills Tags වල ස්ටයිල් එක */
-.skill-tags {
+/* Info Details Card List */
+.personal-info-grid {
+    width: 100%;
+    background: #141414; /* කාඩ්ස් වල තද පසුබිම් වර්ණය */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px 30px;
+}
+
+.info-item {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.skill-tags span {
-    background: rgba(0, 255, 221, 0.1);
-    border: 1px solid rgba(0, 255, 221, 0.3);
-    padding: 10px 20px;
-    border-radius: 30px;
+.info-item:last-child {
+    border-bottom: none; /* අන්තිම එකේ ඉර අයින් කිරීම */
+}
+
+.info-label {
+    color: #00ffdd; /* ලේබල් එක Cyan පාටින් */
     font-weight: bold;
+    font-size: 14px;
+    width: 160px;
+    flex-shrink: 0;
+}
+
+.info-value {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* 📱 Mobile Responsive (ෆෝන් වලදී පින්තූරය උඩටත් විස්තර යටටත් පිළිවෙළට හැදීමට) */
+@media (max-width: 992px) {
+    .about-intro-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .about-img-box {
+        margin: 0 auto;
+    }
+
+    .info-item {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-intro-section {
+        padding: 60px 5%;
+    }
+    .about-details-box h2 {
+        font-size: 32px;
+    }
+    .personal-info-grid {
+        padding: 15px 20px;
+    }
+    .info-label {
+        width: 120px;
+    }
+}
+
+
+/* Core Tech Stack & Tools aria */
+
+
+/* --- 🚀 Minimalist Tech Stack Styles (No Boxes) --- */
+
+.tech-stack-minimal {
+    width: 100%;
+    background: #010019; /* මුළු සයිට් එකේම පසුබිම් වර්ණය */
+    padding: 100px 10%;
+    color: #fff;
+    z-index: 5;
+}
+
+.tech-minimal-container {
+    max-width: 1000px; /* කියවන්න ලේසි වෙන්න පළල පොඩ්ඩක් අඩු කරා */
+    margin: 0 auto;
+}
+
+.tech-stack-minimal .sub-title {
     color: #00ffdd;
-    display: inline-flex;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tech-stack-minimal h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+/* List Layout */
+.tech-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* තනි පේළියක ස්ටයිල් */
+.tech-list-row {
+    display: flex;
     align-items: center;
-    gap: 10px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* පේළි වෙන් කරන සිහින් ඉරක් */
     transition: all 0.3s ease;
 }
 
-.skill-tags span:hover {
-    background: #00ffdd;
-    color: #000;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 221, 0.4);
+.tech-list-row:last-child {
+    border-bottom: none; /* අන්තිම ඉර අයින් කිරීම */
 }
 
-/* Footer ස්ටයිල් එක */
-.main-footer {
-    background: #03070d;
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid #111;
+/* වම් පැත්තේ තියෙන Category නම */
+.tech-list-label {
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ffdd; /* Neon Cyan */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
 }
 
-.footer-socials {
-    margin-bottom: 20px;
+.tech-list-label i {
+    font-size: 20px;
+    opacity: 0.8;
 }
 
-.footer-socials a {
+/* දකුණු පැත්තේ තියෙන Technologies ටික */
+.tech-list-values {
+    font-size: 16px;
+    color: #aaaaaa; /* සාමාන්‍ය වෙලාවට ලා අළු පාට */
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* එකින් එක වෙන් කරලා තියෙන වචන වල ස්ටයිල් එක */
+.tech-list-values span {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* 🔥 Hover Effect: පේළිය උඩට මවුස් එක ගෙනිච්චම වෙන වෙනස්කම් */
+.tech-list-row:hover {
+    padding-left: 10px; /* ලාවට දකුණට තල්ලු වීම */
+}
+
+.tech-list-row:hover .tech-list-label {
+    color: #ffffff;
+    /* text-shadow: 0 0 10px rgba(253, 255, 255, 0.5); මාතෘකාව Glow වීම */
+}
+
+.tech-list-row:hover .tech-list-values span {
+    color: #00ffdd; /* Technologies වල නම් සේරම Cyan පාට වීම */
+}
+
+/* 📱 Mobile Responsive (ෆෝන් වලදී වම්/දකුණු බෙදීම නැති කර එක යට එක ලස්සනට පෙන්වීමට) */
+@media (max-width: 768px) {
+    .tech-list-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px 0;
+    }
+    
+    .tech-list-label {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .tech-list-values {
+        font-size: 15px;
+        padding-left: 35px; /* අයිකන් එකට සමාන්තරව දකුණට කිරීම */
+    }
+}
+
+
+
+/* --- 🎨 Beyond Coding / Interests Section Styles --- */
+
+.interests-section {
+    width: 100%;
+    background: #010019; /* මුළු සයිට් එකේම යන පසුබිම් වර්ණය */
+    padding: 100px 10%;
     color: #fff;
-    font-size: 24px;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+    z-index: 5;
+    position: relative;
 }
 
-.footer-socials a:hover {
+.interests-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.interests-section .sub-title {
     color: #00ffdd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
 }
 
-.main-footer p {
-    color: #666;
-    font-size: 14px;
-    margin: 0;
+.interests-section h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    margin-bottom: 60px;
 }
+
+/* Grid Layout (කාඩ් 3 පේළියට තැබීම) */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+/* තනි කාඩ් එකක මූලික සැකසුම */
+.interest-card {
+    position: relative;
+    background: #011546;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px 30px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
+}
+
+/* කාඩ් එක ඇතුලත Content */
+.interest-card-inner {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icons */
+.interest-icon {
+    font-size: 36px;
+    color: #00ffdd;
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+}
+
+/* Headings */
+.interest-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+/* Paragraphs */
+.interest-card p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.6;
+    margin: 0;
+    transition: all 0.4s ease;
+}
+
+/* 🔥 Hover Effects: මවුස් එක ගෙනිච්චම වෙන සුපිරි සෙල්ලම */
+.interest-card:hover {
+    transform: translateY(-10px); /* කාඩ් එක උඩට ඉස්සීම */
+    border-color: #00ffdd;
+    box-shadow: 0 10px 30px rgba(0, 255, 221, 0.15); /* ලස්සන Cyan Glow එකක් */
+    background: #ffffff; /* 💡 පසුබිම සුදු පාට වීම */
+}
+
+/* Hover එකේදී අකුරු සහ Icon කළු පාට කිරීම */
+.interest-card:hover .interest-icon {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.interest-card:hover h3 {
+    color: #000000;
+}
+
+.interest-card:hover p {
+    color: #333333; /* කියවන්න ලේසි තද අළු/කළු පාටක් */
+}
+
+/* 📱 Responsive Screen Sizes */
+@media (max-width: 992px) {
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr); /* ටැබ්ලට් වලදී පේළියට 2යි */
+    }
+}
+
+@media (max-width: 768px) {
+    .interests-grid {
+        grid-template-columns: 1fr; /* ෆෝන් වලදී එක යට එක */
+    }
+    .interests-section {
+        padding: 60px 5%;
+    }
+    .interests-section h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+

@@ -1,0 +1,238 @@
+/* --- 🛸 Services Section & Neon Cards Styles --- */
+
+.services-section {
+    width: 100%;
+    background: #060b14;
+    padding: 120px 10% 100px 10%;
+    color: #fff;
+    z-index: 5;
+    text-align: center;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-section .sub-title {
+    color: #00ffdd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.services-section h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.services-intro {
+    color: #aaa;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+/* Grid Layout (කාඩ් 2ක් මැදට පේළියට තැබීම) */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Neon Rotating Border Card Box */
+.neon-service-card {
+    position: relative;
+    width: 100%;
+    max-width: 450px; /* කාඩ් එකේ උපරිම පළල */
+    background: #0e1628;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* බෝඩර් එක වටේ කැරකෙන Neon Conic Gradient */
+.neon-service-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        transparent, 
+        transparent, 
+        transparent, 
+        #00ff00, /* Neon Cyan */
+        #00ffff  /* Neon Pink */
+    );
+    animation: rotateServiceBorder 4s linear infinite;
+    z-index: 2;
+}
+
+/* කාඩ් එක මැද Mask එක (සිහින් 3px බෝඩර් එකක් ඉතුරු කරයි) */
+.neon-service-card::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #0e1628;
+    border-radius: 17px;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+/* කාඩ් එක ඇතුලත අන්තර්ගතය */
+.service-card-inner {
+    position: relative;
+    width: 100%;
+    padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+
+.service-icon {
+    font-size: 45px;
+    color: #00ffdd;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.service-card-inner h3 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.service-card-inner p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Service Skills Tags */
+.service-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-tags span {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* 🔄 Border Rotation Animation */
+@keyframes rotateServiceBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 🔥 Hover Effect: කාඩ් එක උඩට ගියපුවාම පසුබිම සුදු වී අකුරු කළු වීම */
+.neon-service-card:hover {
+    transform: translateY(-5px); /* ලාවට උඩට ඉස්සීම */
+}
+
+.neon-service-card:hover::after {
+    background: #ffffff; /* ඇතුලත සුදු පැහැ වීම */
+}
+
+.neon-service-card:hover .service-icon {
+    color: #000000;
+}
+
+.neon-service-card:hover .service-card-inner h3 {
+    color: #000000;
+}
+
+.neon-service-card:hover .service-card-inner p {
+    color: #333333;
+}
+
+.neon-service-card:hover .service-tags span {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: #000000;
+}
+
+/* 📱 Responsive Phones */
+@media (max-width: 768px) {
+    .services-section {
+        padding: 60px 5%;
+    }
+    .services-section h2 {
+        font-size: 32px;
+    }
+    .service-card-inner {
+        padding: 35px 20px;
+    }
+}
+
+/* --- 🔗 Services Card Contact Button Styles --- */
+
+.service-btn {
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: transparent;
+    border: 2px solid #00ffdd;
+    color: #00ffdd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-btn i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* 💡 බටන් එක උඩට විතරක් මවුස් එක ගෙනිච්චම වෙන Glow එක */
+.service-btn:hover {
+    background: #00ffdd;
+    color: #060b14 !important;
+    box-shadow: 0 0 15px #00ffdd;
+}
+
+.service-btn:hover i {
+    transform: translateX(4px); /* ඊතලය දකුණට තල්ලු වීම */
+}
+
+/* 🔥 Hover Effect Compatibility: මුළු කාඩ් එකම සුදු පැහැ වෙද්දී බටන් එක වෙනස් වන ආකාරය */
+.neon-service-card:hover .service-btn {
+    border-color: #060b14;
+    color: #060b14;
+}
+
+.neon-service-card:hover .service-btn:hover {
+    background: #060b14;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(6, 11, 20, 0.4);
+}

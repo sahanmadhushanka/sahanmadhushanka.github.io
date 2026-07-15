@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Sahan Madhushanka</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer_home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -34,11 +38,165 @@
     </nav>
 
     <div class="content-section">
-        <h1 style="color: #00e5ff; text-align: center; margin-top: 50px;">ABOUT ME</h1>
-        <p style="color: #fff; text-align: center; max-width: 600px; margin: 20px auto;">
-            මෙතනට ඔයාගේ විස්තර ටික ලස්සනට ඇතුලත් කරන්න මල්ලි...
-        </p>
-    </div>
+<!-- 👤 About Intro Section Start -->
+<section class="about-intro-section">
 
+    <div class="about-intro-container">
+        <!-- වම් පැත්ත: Profile Image එක එන කොටස -->
+        <div class="about-img-box">
+            <div class="img-wrapper">
+                <!-- 💡 මල්ලි, ඔයාගේ පින්තූරය assets/images/ profile.jpg කියන තැනට දාගන්න -->
+                <img src="images/my2_bg.jpeg" alt="M.G. Sahan Madhushanka">
+            </div>
+        </div>
+        
+
+        <!-- දකුණු පැත්ත: ඔයා ගැන විස්තරය සහ Info Grid එක -->
+        <div class="about-details-box">
+            <span class="sub-title">THE INTRODUCTION</span>
+            <h2>About Me</h2>
+            <p class="bio-text">
+                I am a passionate <strong>Data Science Student</strong> at Sri Lanka Technological Campus (SLTC) and an independent software developer. Driven by an intense focus on building analytical frameworks, custom automation algorithms, and high-impact visual design, I specialize in transforming complex datasets into meaningful interactive experiences.
+            </p>
+
+            <!-- Personal Details Box -->
+            <div class="personal-info-grid">
+                <div class="info-item">
+                    <span class="info-label">Full Name  :</span>
+                    <span class="info-value">M.G. Sahan Madhushanka</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Age    :</span>
+                    <span class="info-value">22 Years</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Gender :</span>
+                    <span class="info-value">Male</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Nationality    :</span>
+                    <span class="info-value">Sri Lankan</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Languages  :</span>
+                    <span class="info-value">Sinhala, English</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Identification :   </span>
+                    <span class="info-value">200417801799</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Intro Section End -->
+<!-- 🚀 Minimalist Tech Stack Section Start -->
+<section class="tech-stack-minimal">
+    <div class="tech-minimal-container">
+        <span class="sub-title">MY TECH STACK</span>
+        <h2>Expertise & Tools</h2>
+
+        <div class="tech-list-wrapper">
+            <!-- 💻 1. Programming Languages -->
+            <div class="tech-list-row">
+                <div class="tech-list-label">
+                    <i class="fas fa-code"></i> Languages
+                </div>
+                <div class="tech-list-values">
+                    <span>Python</span>, <span>Java</span>, <span>JavaScript</span>, <span>HTML</span>, <span>CSS</span>, <span>Arduino</span>
+                </div>
+            </div>
+
+            <!-- 🛠️ 2. Libraries & Frameworks -->
+            <div class="tech-list-row">
+                <div class="tech-list-label">
+                    <i class="fas fa-cubes"></i> Frameworks
+                </div>
+                <div class="tech-list-values">
+                    <span>Tkinter</span>, <span>Flet</span>, <span>MediaPipe</span>
+                </div>
+            </div>
+
+            <!-- 🗄️ 3. Databases -->
+            <div class="tech-list-row">
+                <div class="tech-list-label">
+                    <i class="fas fa-database"></i> Database
+                </div>
+                <div class="tech-list-values">
+                    <span>MySQL</span>
+                </div>
+            </div>
+
+            <!-- 🎨 4. Design Tools -->
+            <div class="tech-list-row">
+                <div class="tech-list-label">
+                    <i class="fas fa-palette"></i> Design Tools
+                </div>
+                <div class="tech-list-values">
+                    <span>Adobe Photoshop</span>, <span>CorelDRAW</span>, <span>Illustrator</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Minimalist Tech Stack Section End -->
+
+<!-- 🎨 Beyond Coding / Interests Section Start -->
+<section class="interests-section">
+    <div class="interests-container">
+        <span class="sub-title">BEYOND CODING</span>
+        <h2>Interests & Creative Pursuits</h2>
+
+        <div class="interests-grid">
+            <!-- 📱 Card 1: Content Strategy & Facebook Growth -->
+            <div class="interest-card">
+                <div class="card-glow"></div>
+                <div class="interest-card-inner">
+                    <i class="fas fa-bullhorn interest-icon"></i>
+                    <h3>Content Strategy</h3>
+                    <p>Managing and scaling social media pages with a focus on organic reach, audience engagement, and Meta monetization strategies.</p>
+                </div>
+            </div>
+
+            <!-- 📷 Card 2: Photography -->
+            <div class="interest-card">
+                <div class="card-glow"></div>
+                <div class="interest-card-inner">
+                    <i class="fas fa-camera interest-icon"></i>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and exploring visual storytelling through a lens, focusing on composition, lighting, and creative perspectives.</p>
+                </div>
+            </div>
+
+            <!-- 🎨 Card 3: Graphic Design -->
+            <div class="interest-card">
+                <div class="card-glow"></div>
+                <div class="interest-card-inner">
+                    <i class="fas fa-paint-brush interest-icon"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creating high-contrast, minimalist social media assets, posters, and professional brand identities using modern design tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="footer-container">
+        <!-- Social Media Icons කොටස (LinkedIn & GitHub ඇතුළත්ව) -->
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <!-- 🔗 LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/sahan-madhushanka-8b9639414" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <!-- 🐙 GitHub Button -->
+            <a href="https://github.com/sahanmadhushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        
+        <!-- Copyright Text කොටස -->
+        <p class="copyright-text">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
