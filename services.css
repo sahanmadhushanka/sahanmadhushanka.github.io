@@ -1,4 +1,3 @@
-
 .services-section {
     width: 100%;
     background: radial-gradient(circle at 10% 20%, rgba(25, 0, 31, 0.8) 0%, rgb(0, 9, 35) 90%);
@@ -83,7 +82,7 @@
     content: '';
     position: absolute;
     inset: 3px;
-    background: #0e1628;
+    background: #00091f;
     border-radius: 17px;
     z-index: 2;
     transition: background 0.3s ease;

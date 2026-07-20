@@ -363,7 +363,7 @@
 .interest-card {
     position: relative;
     /* background: #000000; */
-        background: radial-gradient(circle at 10% 20%, rgba(13, 0, 17, 0.8) 0%, rgb(0, 8, 31) 90%);
+    background: radial-gradient(circle at 10% 20%, rgba(0, 13, 65, 0.859) 0%, rgb(0, 9, 36) 90%);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 40px 30px;

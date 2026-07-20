@@ -43,7 +43,7 @@
 .skills-box {
     position: relative;
     width: 100%;
-    background: radial-gradient(circle at 10% 20%, rgba(29, 0, 32, 0.8) 0%, rgb(0, 8, 30) 90%);
+    background: radial-gradient(circle at 10% 20%, rgba(0, 13, 65, 0.859) 0%, rgb(0, 9, 36) 90%);
     border: 1px solid rgba(255, 255, 255, 0.05); 
     border-radius: 15px;
     padding: 30px;
