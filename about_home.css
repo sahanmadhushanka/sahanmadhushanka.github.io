@@ -20,7 +20,6 @@
     margin: 0 auto;
 }
 
-/* වම් පැත්තේ Photo එකේ ස්ටයිල් */
 .about-image {
     position: relative;
     flex: 1;
@@ -35,11 +34,10 @@
     border-radius: 20px;
     position: relative;
     z-index: 2;
-    filter: grayscale(20%); /* ලාවට professional ගතියක් දෙන්න */
+    filter: grayscale(20%); 
     transition: all 0.4s ease;
 }
 
-/* ෆොටෝ එක යටින් තියෙන Neon Border Frame එක */
 .about-image .image-border {
     position: absolute;
     top: 20px;
@@ -52,7 +50,6 @@
     transition: all 0.4s ease;
 }
 
-/* මවුස් එක ෆොටෝ එක උඩට ගෙනිච්චම වෙන සුපිරි ඉෆෙක්ට් එක */
 .about-image:hover img {
     transform: translate(-10px, -10px);
     filter: grayscale(0%);
@@ -62,14 +59,12 @@
     transform: translate(10px, 10px);
     background: rgba(0, 255, 221, 0.05);
 }
-
-/* 🎯 දකුණු පැත්තේ විස්තර වල ස්ටයිල් (අකුරු සහ බටන් වමට පෙළගැස්වීම) */
 .about-content {
     flex: 1.2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 🔥 බටන් එක සහ අනෙකුත් දේවල් වමට තබා ගැනීමට */
-    text-align: left; /* 🔥 අකුරු වමට පෙළගැස්වීම */
+    align-items: flex-start; 
+    text-align: left;
 }
 
 .about-content .sub-title {
@@ -93,14 +88,13 @@
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 20px;
-    text-align: justify; /* ඡේදයේ දෙපැත්තම ලස්සනට සමපාත කිරීම */
+    text-align: justify; 
 }
 
 .about-content strong {
-    color: #00ffdd; /* වැදගත් වචන Neon පාටින් කැපිලා පේන්න */
+    color: #00ffdd; 
 }
 
-/* --- 💡 කැරකෙන නියොන් බෝඩර් කාඩ් ස්ටයිල් --- */
 .about-cards {
     display: flex;
     gap: 30px;
@@ -109,7 +103,6 @@
     width: 100%;
 }
 
-/* පිටත කාඩ් එක */
 .box {
     position: relative;
     width: 280px;
@@ -127,30 +120,29 @@
     transform: translateY(-5px);
 } */
 
-/* Hover Effect: පොඩ්ඩක් ඉස්සෙන ගතියක් */
+
 .box:hover {
     transform: translateY(-8px);
-    background: #ffffff; /* පසුබිම පොඩ්ඩක් ලා පාට වීම */
-    border-color: rgba(0, 255, 221, 0.799); /* Neon cyan border එකක් ලාවට පේන්න */
-    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3); /* යටින් shadow එකක් */
-}
-/* 1. Icon එක කළු කිරීම */
-.box:hover .skills-icon {
-    color: #000000;
-    filter: none; /* කලින් තිබ්බ glow එක අයින් කරන්න */
+    background: #ffffff;
+    border-color: rgba(0, 255, 221, 0.799); 
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3);
 }
 
-/* 2. Heading (h3) එක කළු කිරීම */
+.box:hover .skills-icon {
+    color: #000000;
+    filter: none; 
+}
+
+
 .box:hover .skills-card h3 {
     color: #000000;
 }
 
-/* 3. Paragraph (p) එක කළු කිරීම */
 .box:hover .skills-card p {
-    color: #111111; /* කියවන්න ලේසි වෙන්න තද කළු පාටක් */
+    color: #111111;
 }
 
-/* නියොන් Cyan ලයින් එක */
+
 .box::before {
     content: "";
     position: absolute;
@@ -160,7 +152,7 @@
     animation: animateCardBorder 4s linear infinite;
 }
 
-/* නියොන් Blue ලයින් එක */
+
 .box::after {
     content: "";
     position: absolute;
@@ -176,11 +168,11 @@
     100% { transform: rotate(360deg); }
 }
 
-/* 🎯 කාඩ් එක ඇතුළත විස්තර (අයිකන් සහ අකුරු වමට සෙට් කිරීම) */
+
 .a-card {
     position: absolute;
     inset: 2px;
-    background: #0c1322; /* තද නිල්/කළු ඇතුලත පසුබිම */
+    background: #0c1322; 
     border-radius: 13px;
     padding: 20px;
     z-index: 10;

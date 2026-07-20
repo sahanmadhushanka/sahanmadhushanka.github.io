@@ -1,22 +1,21 @@
-/* --- 🔥 Skills Section - Clean & Minimalist Style --- */
 
 .skills-section {
     position: relative;
     display: block;
     width: 100%;
-    background: #000213; /* About Me සෙක්ෂන් එකේ පසුබිම් පාටම */
+    background: #000213; 
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Heading මැදට ගැනීමට */
+    align-items: center; 
     text-align: center;
 }
 
 /* Heading styles */
 .skills-section .sub-title {
-    color: #00ffdd; /* Cyan color for accent */
+    color: #00ffdd; 
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -34,61 +33,59 @@
 /* Skills GRID Structure */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* එක පේළියක කාඩ්ස් 3ක් */
-    gap: 30px; /* කාඩ්ස් අතර පරතරය */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
     width: 100%;
     max-width: 1200px;
 }
 
-/* --- 💡 Clean Card Structure (No Neon Glow) --- */
+
 .skills-box {
     position: relative;
     width: 100%;
-    /* height auto කරා, text එක අනුව කාඩ් එකේ උස හැදෙන්න */
-    background: #0e1628; /* තද නිල්/කළු පසුබිම */
-    border: 1px solid rgba(255, 255, 255, 0.05); /* ඉතා සිහින්, බොඳ වුණු බෝඩර් එකක් */
+    background: #0e1628; 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
     border-radius: 15px;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* අයිකන් සහ අකුරු වමට ගැනීම */
+    align-items: flex-start; 
     text-align: left;
-    transition: all 0.3s ease; /* Hover effect එක smooth වෙන්න */
+    transition: all 0.3s ease; 
     cursor: pointer;
 }
 
-/* Hover Effect: පොඩ්ඩක් ඉස්සෙන ගතියක් */
+
 .skills-box:hover {
     transform: translateY(-8px);
-    background: #ffffff; /* පසුබිම පොඩ්ඩක් ලා පාට වීම */
-    border-color: rgba(0, 255, 221, 0.799); /* Neon cyan border එකක් ලාවට පේන්න */
-    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3); /* යටින් shadow එකක් */
-}
-/* 1. Icon එක කළු කිරීම */
-.skills-box:hover .skills-icon {
-    color: #000000;
-    filter: none; /* කලින් තිබ්බ glow එක අයින් කරන්න */
+    background: #ffffff; 
+    border-color: rgba(0, 255, 221, 0.799); 
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3);
 }
 
-/* 2. Heading (h3) එක කළු කිරීම */
+.skills-box:hover .skills-icon {
+    color: #000000;
+    filter: none; 
+}
+
+
 .skills-box:hover .skills-card h3 {
     color: #000000;
 }
 
-/* 3. Paragraph (p) එක කළු කිරීම */
+
 .skills-box:hover .skills-card p {
-    color: #111111; /* කියවන්න ලේසි වෙන්න තද කළු පාටක් */
+    color: #111111; 
 }
 
 /* Icon style */
 .skills-icon {
-    color: #00ffdd; /* Cyan color */
+    color: #00ffdd; 
     font-size: 36px;
     margin-bottom: 18px;
     transition: all 0.3s ease;
 }
 
-/* Hover වලදී Icon එකේ size එක සහ glow එක වෙනස් වීම */
 .skills-box:hover .skills-icon {
     transform: scale(1.05);
     filter: drop-shadow(0 0 5px rgba(0, 255, 221, 0.4));
@@ -109,19 +106,19 @@
     margin: 0;
 }
 
-/* 📱 Skills Responsive (ෆෝන් වලදී GRID එක එක පෙලට හැදෙන්න) */
+
 @media (max-width: 992px) {
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* මැද ස්ක්‍රීන් වලදී 2ක් */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 600px) {
     .skills-section {
-        padding: 60px 5%; /* මොබයිල් වලදී padding අඩු කිරීම */
+        padding: 60px 5%; 
     }
     .skills-grid {
-        grid-template-columns: repeat(1, 1fr); /* ෆෝන් වලදී 1ක් */
+        grid-template-columns: repeat(1, 1fr); 
     }
     .skills-box {
         padding: 25px;

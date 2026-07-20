@@ -1,13 +1,11 @@
-/* --- 🔥 Footer Styles (Fixed Height & Centered) --- */
-
 .main-footer {
     width: 100%;
     background: #ffffff;
-    padding: 60px 0; /* 💡 විසඳුම: උඩට සහ යටට 80px බැගින් දමා Footer එකේ උස ලොකු කරා */
+    padding: 60px 0; 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
     z-index: 5;
-    display: flex; /* 💡 හැමදේම මැදටම තැබීම තහවුරු කිරීමට */
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -18,21 +16,20 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 💡 Icons සහ Text 100% ක් මැදට පෙළගැස්වීම */
+    align-items: center; 
     justify-content: center;
-    gap: 25px; /* Icons සහ Text අතර පරතරය ලස්සන කරා */
+    gap: 25px; 
     text-align: center;
 }
 
 /* Social Icons Layout */
 .footer-socials {
     display: flex;
-    justify-content: center; /* 💡 Icons මැදටම තැබීම */
+    justify-content: center; 
     align-items: center;
     gap: 20px;
 }
 
-/* තනි Icon එකක ස්ටයිල් */
 .footer-socials .social-icon {
     display: flex;
     align-items: center;
@@ -42,7 +39,7 @@
     background: #0e1628;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: #00ffdd; /* 💡 කලින් නිල්/කළු පාට වෙනුවට සිරාවටම කැපිලා පේන්න Cyan පාට කරා */
+    color: #00ffdd; 
     font-size: 18px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -59,19 +56,19 @@
 
 /* Copyright Text Style */
 .copyright-text {
-    color: #888888; /* 💡 කළු පසුබිමේ පැහැදිලිව පේන ලස්සන ලා අළු පාටක් */
+    color: #888888; 
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     margin: 0;
-    text-align: center; /* 💡 අකුරු මැදට කිරීම */
+    text-align: center; 
     width: 100%;
 }
 
-/* 📱 Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 600px) {
     .main-footer {
-        padding: 40px 0; /* මොබයිල් වලදී උස පොඩ්ඩක් අඩු කිරීම */
+        padding: 40px 0; 
     }
     .footer-socials .social-icon {
         width: 40px;

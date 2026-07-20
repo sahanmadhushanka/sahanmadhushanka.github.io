@@ -1,9 +1,9 @@
-/* --- 👤 About Intro Section Styles --- */
+/* --- About Intro Section Styles --- */
 
 .about-intro-section {
     position: relative;
     width: 100%;
-    background: #010019; /* මුළු සයිට් එකේම යන පසුබිම් වර්ණය */
+    background: #010019; 
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
@@ -41,27 +41,27 @@
     display: block;
 }
 
-/* --- 🛸 Premium Rotating Border Animation Card --- */
+/* --- Premium Rotating Border Animation Card --- */
 
 .img-wrapper {
     position: relative;
     width: 100%;
-    background: #ffffff; /* කාඩ් එකේ ඇතුලත තද නිල්/කළු පසුබිම */
+    background: #ffffff; 
     border-radius: 15px;
     padding: 5px;
     color: #fff;
-    overflow: hidden; /* 💡 වැදගත්: වටේ කැරකෙන පාට කෑල්ල කාඩ් එකෙන් එලියට පේන එක වලක්වන්න */
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
     z-index: 1;
 }
 
-/* 💡 කාඩ් එක ඇතුලේ තියෙන අන්තර්ගතය වටේ කැරකෙන ඉරට යට වෙන්න නොදී උඩින් තියාගන්න */
+
 .img-wrapper * {
     z-index: 3;
 }
 
-/* 🎨 බෝඩර් එක වටේ කැරකෙන පාට පටිය (Neon Gradient) */
+
 .img-wrapper::before {
     content: '';
     position: absolute;
@@ -69,29 +69,26 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    /* 💡 ඔයාට කැමති Neon පාට දෙකක් මෙතනට දාන්න පුළුවන් (Cyan සහ Pink) */
     background: conic-gradient(
         transparent, 
         transparent, 
         transparent, 
-        #eeff00, /* Neon Cyan */
-        #ff007f  /* Neon Pink */
+        #eeff00, 
+        #ff007f  
     );
-    animation: rotateBorder 4s linear infinite; /* කැරකෙන වේගය (තත්පර 4) */
+    animation: rotateBorder 4s linear infinite; 
     z-index: 2;
 }
 
-/* 🖤 කාඩ් එකේ මැද කොටස කළු කරලා සිහින් බෝඩර් එකක් විතරක් ඉතිරි කරන Mask එක */
 .img-wrapper::after {
     content: '';
     position: absolute;
-    inset: 4px; /* 💡 මේකෙන් තමයි බෝඩර් එකේ මහත තීරණය වෙන්නේ (3px සිහින් බෝඩර් එකක්) */
-    background: #000000; /* කාඩ් එකේ පසුබිම් පාටමයි */
+    inset: 4px; 
+    background: #000000;
     border-radius: 12px;
     z-index: 2;
 }
 
-/* 🔄 බෝඩර් එක 360°ක් කරකවන Animation එක */
 @keyframes rotateBorder {
     0% {
         transform: rotate(0deg);
@@ -107,7 +104,7 @@
 }
 
 .about-details-box .sub-title {
-    color: #00ffdd; /* Neon Cyan color */
+    color: #00ffdd; 
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -132,7 +129,7 @@
 /* Info Details Card List */
 .personal-info-grid {
     width: 100%;
-    background: #141414; /* කාඩ්ස් වල තද පසුබිම් වර්ණය */
+    background: #141414; 
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     padding: 25px 30px;
@@ -145,11 +142,11 @@
 }
 
 .info-item:last-child {
-    border-bottom: none; /* අන්තිම එකේ ඉර අයින් කිරීම */
+    border-bottom: none; 
 }
 
 .info-label {
-    color: #00ffdd; /* ලේබල් එක Cyan පාටින් */
+    color: #00ffdd; 
     font-weight: bold;
     font-size: 14px;
     width: 160px;
@@ -161,7 +158,6 @@
     font-size: 15px;
 }
 
-/* 📱 Mobile Responsive (ෆෝන් වලදී පින්තූරය උඩටත් විස්තර යටටත් පිළිවෙළට හැදීමට) */
 @media (max-width: 992px) {
     .about-intro-container {
         flex-direction: column;
@@ -194,21 +190,16 @@
 }
 
 
-/* Core Tech Stack & Tools aria */
-
-
-/* --- 🚀 Minimalist Tech Stack Styles (No Boxes) --- */
-
 .tech-stack-minimal {
     width: 100%;
-    background: #010019; /* මුළු සයිට් එකේම පසුබිම් වර්ණය */
+    background: #010019; 
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
 }
 
 .tech-minimal-container {
-    max-width: 1000px; /* කියවන්න ලේසි වෙන්න පළල පොඩ්ඩක් අඩු කරා */
+    max-width: 1000px; 
     margin: 0 auto;
 }
 
@@ -234,25 +225,24 @@
     width: 100%;
 }
 
-/* තනි පේළියක ස්ටයිල් */
 .tech-list-row {
     display: flex;
     align-items: center;
     padding: 25px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* පේළි වෙන් කරන සිහින් ඉරක් */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
     transition: all 0.3s ease;
 }
 
 .tech-list-row:last-child {
-    border-bottom: none; /* අන්තිම ඉර අයින් කිරීම */
+    border-bottom: none; 
 }
 
-/* වම් පැත්තේ තියෙන Category නම */
+
 .tech-list-label {
     width: 250px;
     font-size: 18px;
     font-weight: bold;
-    color: #00ffdd; /* Neon Cyan */
+    color: #00ffdd; 
     display: flex;
     align-items: center;
     gap: 15px;
@@ -265,36 +255,33 @@
     opacity: 0.8;
 }
 
-/* දකුණු පැත්තේ තියෙන Technologies ටික */
 .tech-list-values {
     font-size: 16px;
-    color: #aaaaaa; /* සාමාන්‍ය වෙලාවට ලා අළු පාට */
+    color: #aaaaaa; 
     line-height: 1.6;
     transition: all 0.3s ease;
 }
 
-/* එකින් එක වෙන් කරලා තියෙන වචන වල ස්ටයිල් එක */
 .tech-list-values span {
     color: #ffffff;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
-/* 🔥 Hover Effect: පේළිය උඩට මවුස් එක ගෙනිච්චම වෙන වෙනස්කම් */
+
 .tech-list-row:hover {
-    padding-left: 10px; /* ලාවට දකුණට තල්ලු වීම */
+    padding-left: 10px; 
 }
 
 .tech-list-row:hover .tech-list-label {
     color: #ffffff;
-    /* text-shadow: 0 0 10px rgba(253, 255, 255, 0.5); මාතෘකාව Glow වීම */
+    /* text-shadow: 0 0 10px rgba(253, 255, 255, 0.5); */
 }
 
 .tech-list-row:hover .tech-list-values span {
-    color: #00ffdd; /* Technologies වල නම් සේරම Cyan පාට වීම */
+    color: #00ffdd; 
 }
 
-/* 📱 Mobile Responsive (ෆෝන් වලදී වම්/දකුණු බෙදීම නැති කර එක යට එක ලස්සනට පෙන්වීමට) */
 @media (max-width: 768px) {
     .tech-list-row {
         flex-direction: column;
@@ -310,17 +297,16 @@
     
     .tech-list-values {
         font-size: 15px;
-        padding-left: 35px; /* අයිකන් එකට සමාන්තරව දකුණට කිරීම */
+        padding-left: 35px; 
     }
 }
 
 
 
-/* --- 🎨 Beyond Coding / Interests Section Styles --- */
 
 .interests-section {
     width: 100%;
-    background: #010019; /* මුළු සයිට් එකේම යන පසුබිම් වර්ණය */
+    background: #010019; 
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
@@ -348,7 +334,7 @@
     margin-bottom: 60px;
 }
 
-/* Grid Layout (කාඩ් 3 පේළියට තැබීම) */
+
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -356,10 +342,9 @@
     width: 100%;
 }
 
-/* තනි කාඩ් එකක මූලික සැකසුම */
 .interest-card {
     position: relative;
-    background: #011546;
+    background: #000000;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 40px 30px;
@@ -368,7 +353,6 @@
     z-index: 1;
 }
 
-/* කාඩ් එක ඇතුලත Content */
 .interest-card-inner {
     position: relative;
     z-index: 3;
@@ -404,15 +388,13 @@
     transition: all 0.4s ease;
 }
 
-/* 🔥 Hover Effects: මවුස් එක ගෙනිච්චම වෙන සුපිරි සෙල්ලම */
 .interest-card:hover {
-    transform: translateY(-10px); /* කාඩ් එක උඩට ඉස්සීම */
+    transform: translateY(-10px); 
     border-color: #00ffdd;
-    box-shadow: 0 10px 30px rgba(0, 255, 221, 0.15); /* ලස්සන Cyan Glow එකක් */
-    background: #ffffff; /* 💡 පසුබිම සුදු පාට වීම */
+    box-shadow: 0 10px 30px rgba(0, 255, 221, 0.15); 
+    background: #ffffff; 
 }
 
-/* Hover එකේදී අකුරු සහ Icon කළු පාට කිරීම */
 .interest-card:hover .interest-icon {
     color: #000000;
     transform: scale(1.1);
@@ -423,19 +405,19 @@
 }
 
 .interest-card:hover p {
-    color: #333333; /* කියවන්න ලේසි තද අළු/කළු පාටක් */
+    color: #333333; 
 }
 
-/* 📱 Responsive Screen Sizes */
+/* Responsive Screen Sizes */
 @media (max-width: 992px) {
     .interests-grid {
-        grid-template-columns: repeat(2, 1fr); /* ටැබ්ලට් වලදී පේළියට 2යි */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
     .interests-grid {
-        grid-template-columns: 1fr; /* ෆෝන් වලදී එක යට එක */
+        grid-template-columns: 1fr;
     }
     .interests-section {
         padding: 60px 5%;

@@ -1,4 +1,4 @@
-/* --- 🎓 Qualifications & Slideshow Styles --- */
+/* ---  Qualifications & Slideshow Styles --- */
 
 .qualifications-section {
     width: 100%;
@@ -28,12 +28,12 @@
     margin-bottom: 50px;
 }
 
-/* 📸 Slideshow Outer Wrapper (Screen එකේ 75% මැදට ගැනීම) */
+
 .certificate-slider-wrapper {
-    width: 75%; /* 💡 හරියටම screen එකෙන් 75% ක් පළල */
+    width: 75%; 
     max-width: 900px;
-    margin: 0 auto 50px auto; /* 💡 මැදට කර ඉඩ තැබීම */
-    aspect-ratio: 16 / 10; /* සහතික වල හැඩයට ගැලපෙන උස */
+    margin: 0 auto 50px auto; 
+    aspect-ratio: 16 / 10;
     position: relative;
     border-radius: 20px;
     border: 2px solid rgba(0, 255, 221, 0.2);
@@ -46,46 +46,50 @@
     width: 100%;
     height: 100%;
     position: relative;
+    object-fit: cover;
+    
 }
 
 /* Single Slide */
 .slide {
-    display: none; /* Default hidden */
+    display: none; 
     width: 100%;
     height: 100%;
     position: relative;
+    object-fit: cover;
 }
 
 .slide.active {
-    display: block; /* සක්‍රිය එක පෙන්වීම */
+    display: block; 
+
 }
 
 /* Slide Image */
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 💡 සහතිකය විකෘති නොවී සම්පූර්ණයෙන්ම පෙන්වීමට */
+    object-fit: contain; 
     background: #0e1628;
 }
 
-/* Caption (යටින් ලියන විස්තරය) */
-.slide-caption {
+
+/* .slide-caption {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(14, 22, 40, 0.85); /* කළු ලාවට විනිවිද පෙනෙන පසුබිම */
+    background: rgba(14, 22, 40, 0.85); 
     color: #00ffdd;
     padding: 15px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     border-top: 1px solid rgba(0, 255, 221, 0.1);
-}
+} */
 
-/* Navigation Arrows (ඊතල) */
+
 .prev, .next {
-    cursor: pointer;
+    /* cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -103,6 +107,12 @@
     user-select: none;
     transition: 0.3s ease;
     z-index: 10;
+} */
+    position: relative;
+    height: 180vh;
+    margin-top: -30vh;
+    perspective: 1000px;
+    background-color: rgba(0,0,0,0);
 }
 
 .prev { left: 15px; }
@@ -115,33 +125,33 @@
 }
 
 /* Indicator Dots */
-.slider-dots {
+/* .slider-dots {
     position: absolute;
-    bottom: 50px; /* Caption එකට උඩින් තැබීමට */
+    bottom: 50px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 8px;
     z-index: 10;
-}
+} */
 
-.dot {
+/* .dot {
     cursor: pointer;
     height: 8px;
     width: 8px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     transition: 0.3s ease;
-}
+} */
 
-.dot.active, .dot:hover {
+/* .dot.active, .dot:hover {
     background-color: #00ffdd;
     box-shadow: 0 0 8px #00ffdd;
-    width: 20px; /* Active dot එක ටිකක් දික් කිරීමේ modern effect එක */
+    width: 20px; 
     border-radius: 5px;
-}
+} */
 
-/* 📜 Timeline Styles */
+/*  Timeline Styles */
 .timeline {
     position: relative;
     border-left: 2px solid rgba(0, 255, 221, 0.15);
@@ -206,10 +216,10 @@
     transform: scale(1.3);
 }
 
-/* 📱 Responsive sizes */
+/*  Responsive sizes */
 @media (max-width: 992px) {
     .certificate-slider-wrapper {
-        width: 90%; /* පොඩි screen වලදී ටිකක් පළල වැඩි කිරීම */
+        width: 90%; 
     }
 }
 

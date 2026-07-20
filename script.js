@@ -85,31 +85,29 @@ window.onload = function() {
     let particlesArray = [];
     let mouse = { x: null, y: null };
 
-    // Particle (කුඩා බෝල) ක්ලාස් එකක් නිර්මාණය කිරීම
+
     class Particle {
         constructor(x, y) {
             this.x = x;
             this.y = y;
-            // බෝල විසිරී යන වේගය සහ දිශාව (Random)
-            this.size = Math.random() * 8 + 2; // සයිස් එක 2ත් 10ත් අතර
+            this.size = Math.random() * 8 + 2; 
             this.speedX = Math.random() * 3 - 1.5;
             this.speedY = Math.random() * 3 - 1.5;
-            // ලස්සන Neon Cyan සහ Mint Green පාටවල් මාරුවෙන් මාරුවට එන්න
             this.color = Math.random() > 0.5 ? 'rgba(0, 255, 255, ' : 'rgba(255, 255, 255, ';
-            this.alpha = 1; // opacity එක
-            this.decay = Math.random() * 0.015 + 0.01; // මැකී යන වේගය
+            this.alpha = 1; 
+            this.decay = Math.random() * 0.015 + 0.01; 
         }
 
         update() {
             this.x += this.speedX;
             this.y += this.speedY;
-            this.alpha -= this.decay; // කාලයත් එක්ක ලාවට මැකී යන්න
-            if (this.size > 0.2) this.size -= 0.05; // කුඩා වෙන්න
+            this.alpha -= this.decay; 
+            if (this.size > 0.2) this.size -= 0.05; 
         }
 
         draw() {
             ctx.fillStyle = this.color + this.alpha + ')';
-            ctx.shadowBlur = 12; // Neon දිලිසීම (Glow)
+            ctx.shadowBlur = 12; 
             ctx.shadowColor = '#00ffea';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -117,25 +115,24 @@ window.onload = function() {
         }
     }
 
-    // මවුස් එක හොලවන කොට Particles විදීම
+// mouse effect
     banner.addEventListener('mousemove', (e) => {
         const rect = banner.getBoundingClientRect();
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
 
-        // මවුස් එක පොඩ්ඩක් හොලවද්දී බෝල 3ක් බැගින් ලිස්සලා හැදෙන්න
         for (let i = 0; i < 3; i++) {
             particlesArray.push(new Particle(mouse.x, mouse.y));
         }
     });
 
-    // Animation එක ලූප් එකක් විදිහට රන් කිරීම
+
     function handleParticles() {
         for (let i = 0; i < particlesArray.length; i++) {
             particlesArray[i].update();
             particlesArray[i].draw();
 
-            // සම්පූර්ණයෙන්ම මැකී ගිය බෝල array එකෙන් අයින් කිරීම (Performance වලට මරු)
+
             if (particlesArray[i].alpha <= 0 || particlesArray[i].size <= 0.2) {
                 particlesArray.splice(i, 1);
                 i--;
@@ -144,7 +141,7 @@ window.onload = function() {
     }
 
     function animate() {
-        // පසුබිම ක්ලියර් කරලා අලුතෙන් ඇඳීම
+
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         handleParticles();
         requestAnimationFrame(animate);

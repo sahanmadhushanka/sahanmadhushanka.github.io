@@ -1,4 +1,4 @@
-/* --- ✉️ Contact Section Styles --- */
+/* --- Contact Section Styles --- */
 
 .contact-section {
     width: 100%;
@@ -121,7 +121,6 @@
     resize: none;
 }
 
-/* 🔥 Focus Effect: Field එකක් ඇතුල ක්ලික් කරද්දී Neon Glow වීම */
 .contact-form input:focus, 
 .contact-form textarea:focus {
     border-color: #00ffdd;
@@ -160,10 +159,10 @@
 }
 
 .submit-btn:hover i {
-    transform: translate(4px, -4px); /* Plane එක උඩට සහ දකුණට පියෑඹීම */
+    transform: translate(4px, -4px); 
 }
 
-/* 📱 Mobile Responsive */
+/*  Mobile Responsive */
 @media (max-width: 992px) {
     .contact-wrapper {
         flex-direction: column;

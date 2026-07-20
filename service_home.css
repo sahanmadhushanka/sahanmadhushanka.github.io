@@ -1,10 +1,8 @@
-/* --- 🔥 Services Section Styles --- */
-
 .services-section {
     position: relative;
     display: block;
     width: 100%;
-    background: #000213; /* කලින් පසුබිම් පාටම */
+    background: #000213; 
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
@@ -31,23 +29,23 @@
     color: #fff;
 }
 
-/* Services GRID (කාඩ් 2ක් සඳහා සමානව බෙදී යන ලෙස) */
+
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* පේළියකට කාඩ් 2යි */
-    gap: 40px; /* කාඩ් දෙක අතර පරතරය පොඩ්ඩක් වැඩි කරා */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
     width: 100%;
-    max-width: 1000px; /* කාඩ් 2ක් නිසා මැදට වෙන්න max-width එක හැදුවා */
+    max-width: 1000px; 
 }
 
-/* Link එකක් නිසා එන default අන්ඩර්ලයින් අයින් කිරීම */
+
 .services-box {
     text-decoration: none;
     color: inherit;
     display: block;
 }
 
-/* --- 💡 Clean Card Structure (Skills Box එකට සමානයි) --- */
+
 .services-box {
     position: relative;
     width: 100%;
@@ -63,7 +61,7 @@
     cursor: pointer;
 }
 
-/* Hover Effect: සයිට් එකේ තීම් එකට අනුව වෙනස් වීම */
+
 .services-box:hover {
     transform: translateY(-8px);
     background: #ffffff;
@@ -73,13 +71,13 @@
 
 /* Icon style */
 .services-box .services-icon {
-    color: #00ffdd; /* 🔥 අයිකන් එක සිරාවටම Neon Cyan පාට කිරීම */
-    font-size: 38px; /* 🔥 ප්‍රමාණය ලස්සනට කැපිලා පේන්න විශාල කරා */
+    color: #00ffdd; 
+    font-size: 38px; 
     margin-bottom: 20px;
     display: inline-block;
-    filter: drop-shadow(0 0 5px rgba(0, 255, 221, 0.4)); /* ලාවට Glow වෙන ඉෆෙක්ට් එකක් */
+    filter: drop-shadow(0 0 5px rgba(0, 255, 221, 0.4));
     transition: all 0.3s ease;
-    transform: scale(1.1); /* පොඩ්ඩක් විශාල වීම */
+    transform: scale(1.1);
     filter: drop-shadow(0 0 8px #00ffdd);
 }
 
@@ -98,7 +96,7 @@
     margin-bottom: 20px;
 }
 
-/* "View All Services" ලින්ක් එකේ ස්ටයිල් */
+
 .services-card .read-more {
     color: #00ffdd;
     font-size: 14px;
@@ -110,35 +108,34 @@
 }
 
 .services-box:hover .services-card .read-more {
-    gap: 15px; /* Hover වෙද්දී ඊතල කෑල්ල ඉස්සරහට පනින ඉෆෙක්ට් එක */
+    gap: 15px; 
 }
-/* 🔥 Hover වෙනකොට Hyperlink එක හැර අනෙක් හැමදේම කළු පාට කිරීම */
 
-/* 1. Icon එක කළු කිරීම */
+
+
 .services-box:hover .services-icon {
     color: #000000 !important;
-    filter: none !important; /* Glow එක අයින් කිරීම */
+    filter: none !important;
 }
 
-/* 2. Heading (h3) එක කළු කිරීම */
+
 .services-box:hover .services-card h3 {
     color: #000000;
 }
 
-/* 3. Paragraph (p) එක කළු කිරීම */
+
 .services-box:hover .services-card p {
-    color: #111111; /* කියවන්න ලේසි වෙන්න තද කළු පාටක් */
+    color: #111111; 
 }
 
-/* 💡 Hyperlink (View All Services) එක Hover එකේදීත් Cyan පාටින්ම ස්ථාවරව තබා ගැනීම */
+
 .services-box:hover .services-card .read-more {
     color: #00ffdd;
 }
-
-/* 📱 Mobile Responsive */
+/*  Mobile Responsive */
 @media (max-width: 768px) {
     .services-grid {
-        grid-template-columns: repeat(1, 1fr); /* ෆෝන් වලදී එක පෙලට */
+        grid-template-columns: repeat(1, 1fr); 
         gap: 25px;
     }
     .services-section {

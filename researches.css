@@ -1,4 +1,4 @@
-/* --- 🔬 Research Section Styles --- */
+/* ---  Research Section Styles --- */
 
 .research-section {
     width: 100%;
@@ -43,7 +43,7 @@
     width: 100%;
 }
 
-/* තනි පේළියක Layout එක */
+
 .research-row {
     display: flex;
     gap: 40px;
@@ -56,7 +56,7 @@
     border-bottom: none;
 }
 
-/* වම් පැත්තේ තියෙන Meta Data (Status badges, domains) */
+
 .research-meta {
     width: 220px;
     display: flex;
@@ -96,7 +96,7 @@
     font-weight: 500;
 }
 
-/* දකුණු පැත්තේ තියෙන Content එක */
+
 .research-content {
     flex: 1;
 }
@@ -141,10 +141,10 @@
 
 .res-link.disabled {
     color: #555;
-    pointer-events: none; /* ක්ලික් කරන්න බැරි කරන්න */
+    pointer-events: none; 
 }
 
-/* 🔥 Hover Effect: මුළු පේළියම ලාවට Glow වීම */
+
 .research-row:hover {
     padding-left: 15px;
 }
@@ -153,7 +153,7 @@
     color: #00ffdd;
 }
 
-/* 📱 Mobile Responsive */
+/*  Mobile Responsive */
 @media (max-width: 768px) {
     .research-row {
         flex-direction: column;
