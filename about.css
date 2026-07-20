@@ -1,12 +1,29 @@
 /* --- About Intro Section Styles --- */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-border-box;
+}
+
+.header {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    margin-bottom: 120px;
+    z-index: 1000;
+} */
+
 
 .about-intro-section {
     position: relative;
     width: 100%;
-    background: #010019; 
-    padding: 100px 10%;
+    /* background: #010019;  */
+    background: radial-gradient(circle at 10% 20%, rgba(25, 0, 31, 0.8) 0%, rgb(0, 9, 35) 90%);
+    padding-top: 150px;
     color: #fff;
     z-index: 5;
+    padding-top: 130px;
 }
 
 .about-intro-container {
@@ -21,6 +38,7 @@
 
 /* Image Box Styling */
 .about-img-box {
+    padding-top: 15px;
     flex: 1;
     max-width: 400px;
 }
@@ -344,7 +362,8 @@
 
 .interest-card {
     position: relative;
-    background: #000000;
+    /* background: #000000; */
+        background: radial-gradient(circle at 10% 20%, rgba(13, 0, 17, 0.8) 0%, rgb(0, 8, 31) 90%);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 40px 30px;

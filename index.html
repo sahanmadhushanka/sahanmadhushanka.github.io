@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script> -->
 
     <meta charset="UTF-8">
     <link rel="icon" type="logo" href="images/logo.jpeg">
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -50,7 +51,7 @@
     <div class="content-section"></div>
 
     <!-- Welcome Banner Section -->
-    <div class="banner" id="home">
+   <!-- <div class="banner" id="home">
         <canvas id="mouseCanvas"></canvas>
         <div class="banner-content">
             <div class="banner-text">
@@ -58,7 +59,76 @@
                 <span>I am a <span class="typing-text"></span></span>
             </div>
         </div>
-    </div>
+    </div> -->
+    <!-- Hero Section -->
+    <canvas id="mouseCanvas" style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1;"></canvas>
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            
+            <!-- Left Column: Content -->
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <span class="status-dot"></span> Hello, I'm Sahan Madhushanka 👋
+                </div>
+
+                <h1 class="hero-title">
+                    I'm a <br>
+                    <span class="gradient-text typing-text"></span>
+                </h1>
+
+                <p class="hero-description">
+                    I design and build exceptional digital experiences that are fast, accessible, and user-friendly. Currently pursuing my degree while creating innovative web solutions.
+                </p>
+
+                <!-- Buttons -->
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+                    <a href="#" class="btn btn-dark" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+                
+
+                <!-- Social Links & Availability -->
+                <div class="hero-footer">
+                    <div class="social-icons">
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sahanmadushanka" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="status-text">
+                        <span class="green-dot"></span> Available for projects
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Image & Badges -->
+            <div class="hero-image-wrapper">
+          
+
+                <!-- Profile Image Ring -->
+                <div class="image-container">
+                    <img src="images/my_bg2.jpeg" alt="Sahan Madhushanka" class="profile-img">
+                </div>
+
+                      <!-- Top Tag -->
+                <div class="floating-tag open-source">
+                    <span class="status-dot"></span> Open Source
+                </div>
+                <!-- Experience Floating Card -->
+                <div class="experience-card">
+                    <h3>1+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!--  About Me Section Start -->
     <section class="about-section">

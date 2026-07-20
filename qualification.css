@@ -2,8 +2,9 @@
 
 .qualifications-section {
     width: 100%;
-    background: #060b14;
-    padding: 100px 10%;
+    background: radial-gradient(circle at 10% 20%, rgba(25, 0, 31, 0.8) 0%, rgb(0, 9, 35) 90%);
+    padding-top: 150px;
+    padding: 120px 10% 100px 10%;
     color: #fff;
     z-index: 5;
 }
