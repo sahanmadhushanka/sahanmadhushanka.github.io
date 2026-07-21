@@ -19,7 +19,7 @@
     position: relative;
     width: 100%;
     /* background: #010019;  */
-    background: radial-gradient(circle at 10% 20%, rgba(25, 0, 31, 0.8) 0%, rgb(0, 9, 35) 90%);
+    background: radial-gradient(circle at 10% 20%, rgba(27, 24, 39, 0.8) 0%, rgb(24, 28, 41) 90%);
     padding-top: 150px;
     color: #fff;
     z-index: 5;
@@ -210,7 +210,7 @@
 
 .tech-stack-minimal {
     width: 100%;
-    background: #010019; 
+    background: radial-gradient(circle at 10% 20%, rgba(27, 24, 39, 0.8) 0%, rgb(24, 28, 41) 90%);
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
@@ -324,7 +324,7 @@
 
 .interests-section {
     width: 100%;
-    background: #010019; 
+    background: radial-gradient(circle at 10% 20%, rgba(27, 24, 39, 0.8) 0%, rgb(24, 28, 41) 90%);
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
