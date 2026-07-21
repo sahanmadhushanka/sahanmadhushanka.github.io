@@ -373,3 +373,28 @@ body {
     .hero-footer { justify-content: center; flex-direction: column; }
     .image-container { width: 280px; height: 280px; }
 }
+
+
+/* Page Load Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    
+    }
+}
+
+/* Base Class for Load Animation */
+.load-animate {
+    opacity: 0; 
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.0s; }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Sahan Madhushanka</title>
+    <title>Qualifications - Sahan Madhushanka</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="qualification.css">
     <link rel="stylesheet" href="footer_home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <link rel="icon" type="logo" href="images/logo.jpeg">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
 </head>
 <body>
 
+    <!-- Navigation Header -->
     <nav class="header">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -33,105 +33,145 @@
             <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
             <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT ME</a></li>
             <li><a href="researches.html"><i class="fas fa-search"></i> RESEARCHES</a></li>
-            <li><a href="qualification.html"class="active"><i class="fas fa-bookmark"></i> QUALIFICATION</a></li>
+            <li><a href="qualification.html" class="active"><i class="fas fa-bookmark"></i> QUALIFICATION</a></li>
             <li><a href="services.html"><i class="fas fa-cog"></i> SERVICES</a></li>
             <li><a href="contact.html"><i class="fas fa-phone"></i> CONTACT</a></li>
         </ul>
     </nav>
 
     <div class="content-section">
-<!--  Qualifications Section Start -->
-<section class="qualifications-section">
-    <div class="qualifications-container">
-        <span class="sub-title">MY JOURNEY</span>
-        <h2>Education & Credentials</h2>
+        <!-- Qualifications Section Start -->
+        <section class="qualifications-section">
+            <div class="qualifications-container">
+                <span class="sub-title reveal delay-1">MY JOURNEY</span>
+                <h2 class="reveal delay-1">Education & Credentials</h2>
 
-        <!--  75% Center Slideshow for Certificates -->
-        <div class="certificate-slider-wrapper">
-            <div class="certificate-slider">
-                <div class="slide active">
-                    <img src="images/master.png" >
-                    <!-- <div class="slide-caption">SLTC Master Design Competition - Winner Certificate</div> -->
+                <!-- 75% Center Slideshow for Certificates -->
+                <div class="certificate-slider-wrapper reveal delay-2">
+                    <div class="certificate-slider">
+                        <!-- Slide 1 -->
+                        <div class="slide active">
+                            <img src="images/master.png" alt="SLTC Master Design Certificate">
+                        </div>
+
+                        <!-- Slide 2: Info Tech IT/Software Course -->
+                        <div class="slide">
+                            <img src="assets/images/cert_infotech.jpg" alt="Info Tech IT Certificate">
+                            <div class="slide-caption">IT & Software Engineering (Python, HTML, CSS, PHP, SQL, Arduino) - Info Tech</div>
+                        </div>
+
+                        <!-- Slide 3: Oslo Campus Graphic Design Diploma -->
+                        <div class="slide">
+                            <img src="assets/images/cert_oslo_graphic.jpg" alt="Oslo Campus Graphic Design Certificate">
+                            <div class="slide-caption">Diploma in Graphic Design - Oslo Campus</div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+
+                        <!-- Dots Indicating Slides -->
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Slide 2: Info Tech IT/Software Course -->
-                <div class="slide">
-                    <img src="assets/images/cert_infotech.jpg" alt="Info Tech IT Certificate">
-                    <div class="slide-caption">IT & Software Engineering (Python, HTML, CSS, PHP, SQL, Arduino) - Info Tech</div>
-                </div>
+                <!-- Education & Experience Timeline -->
+                <div class="timeline" style="margin-top: 60px;">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal delay-3">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3>B.Sc. (Hons) in Data Science</h3>
+                            <span class="institution">Sri Lanka Technological Campus (SLTC)</span>
+                            <p>Pursuing specialized higher education in Data Science, focusing on analytics, statistics, and machine learning models.</p>
+                        </div>
+                    </div>
 
-                <!-- Slide 3: Oslo Campus Graphic Design Diploma -->
-                <div class="slide">
-                    <img src="assets/images/cert_oslo_graphic.jpg" alt="Oslo Campus Graphic Design Certificate">
-                    <div class="slide-caption">Diploma in Graphic Design - Oslo Campus</div>
-                </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal delay-4">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">After A/Ls</div>
+                        <div class="timeline-content">
+                            <h3>IT & Foundations of Software Engineering</h3>
+                            <span class="institution">Info Tech Campus</span>
+                            <p>Completed hands-on software development foundations focusing on Python, HTML, CSS, PHP, SQL databases, and Arduino hardware programming.</p>
+                        </div>
+                    </div>
 
-                <!-- Navigation Arrows -->
-                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-                <a class="next" onclick="moveSlide(1)">&#10095;</a>
-
-                <!-- Dots Indicating Slides -->
-                <div class="slider-dots">
-                    <span class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal delay-5">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Professional Development</div>
+                        <div class="timeline-content">
+                            <h3>Diploma in Graphic Design</h3>
+                            <span class="institution">Oslo Campus</span>
+                            <p>Earned a professional diploma in visual design principles, mastering industry-standard creative tools for print and digital media.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="timeline" style="margin-top: 60px;">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2025 - Present</div>
-                <div class="timeline-content">
-                    <h3>B.Sc. (Hons) in Data Science</h3>
-                    <span class="institution">Sri Lanka Technological Campus (SLTC)</span>
-                    <p>Pursuing specialized higher education in Data Science, focusing on analytics, statistics, and machine learning models. </p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">After A/Ls</div>
-                <div class="timeline-content">
-                    <h3>IT & Foundations of Software Engineering</h3>
-                    <span class="institution">Info Tech Campus</span>
-                    <p>Completed hands-on software development foundations focusing on Python, HTML, CSS, PHP, SQL databases, and Arduino hardware programming.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Professional Development</div>
-                <div class="timeline-content">
-                    <h3>Diploma in Graphic Design</h3>
-                    <span class="institution">Oslo Campus</span>
-                    <p>Earned a professional diploma in visual design principles, mastering industry-standard creative tools for print and digital media.</p>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!-- Qualifications Section End -->
     </div>
-</section>
-<!-- Qualifications Section End -->
-</div>
 
-<footer class="main-footer">
-    <div class="footer-container">
-        <div class="footer-socials">
-            <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <!--  LinkedIn Button -->
-            <a href="https://linkedin.com/in/YOUR_PROFILE_LINK" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <!--  GitHub Button -->
-            <a href="https://github.com/sahanmadushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/sahan-madhushanka-8b9639414" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sahanmadushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="copyright-text">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
         </div>
-        
-        <p class="copyright-text">&copy; 2026 Sahan Madhushanka. All Rights Reserved.</p>
-    </div>
-</footer>
+    </footer>
 
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- Optional: Manual Slider JS logic for Certificates -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].classList.remove("active");
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            if(slides[slideIndex-1]){
+                slides[slideIndex-1].style.display = "block";
+                slides[slideIndex-1].classList.add("active");
+            }
+            if(dots[slideIndex-1]){
+                dots[slideIndex-1].className += " active";
+            }
+        }
+    </script>
 </body>
 </html>
