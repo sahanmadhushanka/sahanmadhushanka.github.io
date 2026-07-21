@@ -169,3 +169,8 @@ window.onload = function() {
     }
 
 }; // window.onload End
+
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}
