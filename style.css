@@ -5,7 +5,9 @@
 }
 
 body{
-    background: #000000;
+    /* background: radial-gradient(circle at 10% 20%, rgba(27, 24, 39, 0.8) 0%, rgb(24, 28, 41) 90%); */
+
+    background: #19181d;
     font-family: Arial, Helvetica, sans-serif;
 }
 

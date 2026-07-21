@@ -3,7 +3,7 @@
     position: relative;
     display: block;
     width: 100%;
-    background: radial-gradient(circle at 10% 20%, rgba(27, 24, 39, 0.8) 0%, rgb(24, 28, 41) 90%);
+    /* background: radial-gradient(circle at 10% 20%, rgba(27, 24, 39, 0.8) 0%, rgb(24, 28, 41) 90%); */
     padding: 100px 10%;
     color: #fff;
     z-index: 5;
