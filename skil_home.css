@@ -125,3 +125,13 @@
     }
 }
 
+.skill-link {
+    text-decoration: none; 
+    color: inherit;         
+    cursor: default;       
+    display: block;
+}
+
+.skill-link * {
+    cursor: default !important;
+}

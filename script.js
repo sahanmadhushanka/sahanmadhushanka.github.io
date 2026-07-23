@@ -1,8 +1,8 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     // --- 1. Typed.js Initialization (Typing Effect) ---
     const typingElement = document.querySelector('.typing-text');
-    if (typingElement) {
+    if (typingElement && typeof Typed !== 'undefined') {
         new Typed('.typing-text', {
             strings: [
                 'Software Developer', 
@@ -98,10 +98,12 @@ window.onload = function() {
 
     if (canvas && heroSection) {
         const ctx = canvas.getContext('2d');
+        if (!ctx) return;
 
         function resizeCanvas() {
-            canvas.width = heroSection.offsetWidth;
-            canvas.height = heroSection.offsetHeight;
+            const rect = heroSection.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
         }
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
@@ -116,7 +118,7 @@ window.onload = function() {
                 this.size = Math.random() * 6 + 2; 
                 this.speedX = Math.random() * 2 - 1; 
                 this.speedY = Math.random() * 2 - 1;
-                this.color = Math.random() > 0.5 ? 'rgba(0, 255, 234, ' : 'rgba(255, 255, 255, ';
+                this.isCyan = Math.random() > 0.5;
                 this.alpha = 1; 
                 this.decay = Math.random() * 0.015 + 0.01; 
             }
@@ -129,11 +131,13 @@ window.onload = function() {
             }
 
             draw() {
-                ctx.fillStyle = this.color + this.alpha + ')';
+                ctx.fillStyle = this.isCyan 
+                    ? `rgba(0, 255, 234, ${Math.max(0, this.alpha)})` 
+                    : `rgba(255, 255, 255, ${Math.max(0, this.alpha)})`;
                 ctx.shadowBlur = 10; 
                 ctx.shadowColor = '#00ffea';
                 ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.arc(this.x, this.y, Math.max(0, this.size), 0, Math.PI * 2);
                 ctx.fill();
             }
         }
@@ -168,9 +172,11 @@ window.onload = function() {
         animate();
     }
 
-}; // window.onload End
 
-const yearSpan = document.getElementById('year');
-if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-}
+    // --- 7. Footer Dynamic Year Update ---
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+}); // DOMContentLoaded End

@@ -148,7 +148,7 @@
     position: absolute;
     width: 150px;
     height: 350px;
-    background: linear-gradient(180deg, transparent, #ff00bb, #ffd500);
+    background: linear-gradient(180deg, transparent, #0033ff, #00c8ff);
     animation: animateCardBorder 4s linear infinite;
 }
 
@@ -158,7 +158,7 @@
     position: absolute;
     width: 150px;
     height: 350px;
-    background: linear-gradient(180deg, transparent, #ffee00, #ff0090);
+    background: linear-gradient(180deg, transparent, #ffee00, #5900ff);
     animation: animateCardBorder 4s linear infinite;
     animation-delay: -2s;
 }

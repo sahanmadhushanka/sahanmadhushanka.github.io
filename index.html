@@ -10,16 +10,13 @@
     <link rel="stylesheet" href="skil_home.css">
     <link rel="stylesheet" href="service_home.css">
     <link rel="stylesheet" href="footer_home.css">
+    <link rel="stylesheet" href="contact_home.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script> -->
 
-    <meta charset="UTF-8">
     <link rel="icon" type="logo" href="images/logo.jpeg">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -38,7 +35,6 @@
                 </label>
             </div>
             
-
             <li><a href="index.html" class="active"><i class="fas fa-home"></i> HOME</a></li>
             <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT ME</a></li>
             <li><a href="researches.html"><i class="fas fa-search"></i> RESEARCHES</a></li>
@@ -50,129 +46,117 @@
 
     <div class="content-section"></div>
 
-    <!-- Welcome Banner Section -->
-   <!-- <div class="banner" id="home">
-        <canvas id="mouseCanvas"></canvas>
-        <div class="banner-content">
-            <div class="banner-text">
-                <h2> Sahan Madhushanka </h2>
-                <span>I am a <span class="typing-text"></span></span>
-            </div>
-        </div>
-    </div> -->
     <!-- Hero Section -->
-<section class="hero-section" id="home">
-    <div class="hero-container">
+    <section class="hero-section" id="home">
+        <!-- Canvas Tag එක මෙතැනට අනිවාර්යයෙන්ම තිබිය යුතුය -->
+        <canvas id="mouseCanvas"></canvas>
 
-               <!-- Right Column: Profile Image -->
-        <div class="hero-image-wrapper load-animate delay-3">
-            <div class="image-container">
-                <img src="images/my_bg2.jpeg" alt="Sahan Madhushanka" class="profile-img">
-            </div>
+        <div class="hero-container">
 
-            <div class="floating-tag open-source">
-                <span class="status-dot"></span> Open Source
-            </div>
-            
-            <div class="experience-card">
-                <h3>1+</h3>
-                <p>Years Experience</p>
-            </div>
-        </div>
-        <!-- Left Column: Content -->
-        <div class="hero-content">
-            <!-- 1. Badge Pill -->
-            <div class="badge-pill load-animate delay-1">
-                <span class="status-dot"></span> Hello, I'm Sahan Madhushanka 👋
-            </div>
-
-            <!-- 2. Main Title -->
-            <h1 class="hero-title load-animate delay-2">
-                I'm a <br>
-                <span class="gradient-text typing-text"></span>
-            </h1>
-
-            <!-- 3. Description -->
-            <p class="hero-description load-animate delay-3">
-                I design and build exceptional digital experiences that are fast, accessible, and user-friendly. Currently pursuing my degree while creating innovative web solutions.
-            </p>
-
-            <!-- 4. Buttons -->
-            <div class="hero-buttons load-animate delay-4">
-                <a href="services.html" class="btn btn-primary">
-                    View My Work <i class="fas fa-arrow-down"></i>
-                </a>
-                <a href="contact.html" class="btn btn-outline">
-                    Get In Touch
-                </a>
-                <a href="CV.pdf" class="btn btn-dark" download="Sahan_Madhushanka_CV.pdf">
-                    <i class="fas fa-download"></i> Resume CV
-                </a>
-            </div>
-
-            <!-- 5. Social Icons -->
-            <div class="hero-footer load-animate delay-5">
-                <div class="social-icons">
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/sahanmadushanka" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </div>
-
- 
-
-    </div>
-</section>
-<!-- About Me Section Start -->
-<section class="about-section">
-    <div class="about-container">
-        
-        <!-- Image (1st Animation) -->
-        <div class="about-image reveal delay-1">
-            <img src="images/logo.jpeg" alt="Sahan Madhushanka">
-            <div class="image-border"></div>
-        </div>
-
-        <div class="about-content">
-            <!-- Title (2nd Animation) -->
-            <h2 class="reveal delay-2">About Me</h2>
-            
-            <!-- Paragraph 1 (3rd Animation) -->
-            <p class="desc reveal delay-3">
-                I am a passionate <strong>Data Science Undergraduate Student</strong> and <strong>Software Developer</strong> based in Sri Lanka. I love bridging the gap between data insights and interactive user experiences. 
-            </p>
-            
-            <!-- Paragraph 2 (4th Animation) -->
-            <p class="desc reveal delay-4">
-                With a strong technical background in <strong>Python</strong> and transitioning into <strong>Java</strong>, I specialize in building functional desktop and web applications. I have hands-on experience developing practical solutions, ranging from database-driven <strong>Hotel Booking Systems</strong> using Tkinter and SQLite to advanced computer vision projects like <strong>3D Virtual Try-on systems</strong> using MediaPipe and Arduino.
-            </p>
-
-            <!-- Cards (5th Animation) -->
-            <div class="about-cards reveal delay-5">
-                <div class="box">
-                    <div class="a-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>Education</h3>
-                        <p>Data Science Undergraduate<br>SLTC Research University</p>
-                    </div>
+            <!-- Right Column: Profile Image -->
+            <div class="hero-image-wrapper load-animate delay-3">
+                <div class="image-container">
+                    <img src="images/index.png" alt="Sahan Madhushanka" class="profile-img">
                 </div>
 
-                <div class="box">
-                    <div class="a-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Projects</h3>
-                        <p>Tkinter, Flet, MediaPipe & SQLite Applications</p>
+                <div class="floating-tag open-source">
+                    <span class="status-dot"></span> Open Source
+                </div>
+                
+                <div class="experience-card">
+                    <h3>1+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+            <!-- Left Column: Content -->
+            <div class="hero-content">
+                <!-- 1. Badge Pill -->
+                <div class="badge-pill load-animate delay-1">
+                    <span class="status-dot"></span> Hello, I'm Sahan Madhushanka 👋
+                </div>
+
+                <!-- 2. Main Title -->
+                <h1 class="hero-title load-animate delay-2">
+                    I'm a <br>
+                    <span class="gradient-text typing-text"></span>
+                </h1>
+
+                <!-- 3. Description -->
+                <p class="hero-description load-animate delay-3">
+                    I design and build exceptional digital experiences that are fast, accessible, and user-friendly. Currently pursuing my degree while creating innovative web solutions.
+                </p>
+
+                <!-- 4. Buttons -->
+                <div class="hero-buttons load-animate delay-4">
+                    <a href="researches.html" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        Get In Touch
+                    </a>
+                    <a href="CV.pdf" class="btn btn-dark" download="Sahan_Madhushanka_CV.pdf">
+                        <i class="fas fa-download"></i> Resume CV
+                    </a>
+                </div>
+
+                <!-- 5. Social Icons -->
+                <div class="hero-footer load-animate delay-5">
+                    <div class="social-icons">
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sahanmadushanka" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
 
-            <!-- Button (5th Animation) -->
-            <a href="contact.html" class="btn-contact reveal delay-5">Let's Talk</a>
         </div>
-    </div>
-</section>
-<!-- About Me Section End -->
+    </section>
+
+    <!-- About Me Section Start -->
+    <section class="about-section">
+        <div class="about-container">
+            
+            <!-- Image -->
+            <div class="about-image reveal delay-1">
+                <img src="images/logo.jpeg" alt="Sahan Madhushanka">
+                <div class="image-border"></div>
+            </div>
+
+            <div class="about-content">
+                <h2 class="reveal delay-2">About Me</h2>
+                
+                <p class="desc reveal delay-3">
+                    I am a passionate <strong>Data Science Undergraduate Student</strong> and <strong>Software Developer</strong> based in Sri Lanka. I love bridging the gap between data insights and interactive user experiences. 
+                </p>
+                
+                <p class="desc reveal delay-4">
+                    With a strong technical background in <strong>Python</strong> and transitioning into <strong>Java</strong>, I specialize in building functional desktop and web applications. I have hands-on experience developing practical solutions, ranging from database-driven <strong>Hotel Booking Systems</strong> using Tkinter and SQLite to advanced computer vision projects like <strong>3D Virtual Try-on systems</strong> using MediaPipe and Arduino.
+                </p>
+
+                <div class="about-cards reveal delay-5">
+                    <div class="box">
+                        <div class="a-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <p>Data Science Undergraduate<br>SLTC Research University</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="a-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Projects</h3>
+                            <p>Tkinter, Flet, MediaPipe & SQLite Applications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="about.html" class="btn-contact reveal delay-5">view more</a>
+            </div>
+        </div>
+    </section>
+
 <!-- My Skills Section Start -->
 <section class="skills-section">
     <span class="sub-title reveal delay-1">MY TECH STACK</span>
@@ -180,102 +164,116 @@
     
     <div class="skills-grid">
         <!-- Python -->
-        <div class="skills-box reveal delay-1">
+        <a href="qualification.html" class="skills-box reveal delay-1 skill-link">
             <div class="skills-card">
                 <i class="fab fa-python skills-icon"></i>
                 <h3>Python Programming</h3>
-                <p>Advanced, programming, and analytics with Python and relevant libraries.</p>
+                <p>Advanced programming and analytics with Python and relevant libraries.</p>
             </div>
-        </div>
+        </a>
 
         <!-- Java -->
-        <div class="skills-box reveal delay-2">
+        <a href="qualification.html" class="skills-box reveal delay-2 skill-link">
             <div class="skills-card">
                 <i class="fab fa-java skills-icon"></i>
                 <h3>Java Development</h3>
                 <p>Java programming, integrating with databases and handling assets.</p>
             </div>
-        </div>
+        </a>
 
         <!-- SQL -->
-        <div class="skills-box reveal delay-3">
+        <a href="qualification.html" class="skills-box reveal delay-3 skill-link">
             <div class="skills-card">
                 <i class="fas fa-database skills-icon"></i>
                 <h3>SQL Databases</h3>
                 <p>Database schema design, data manipulation, and asset management.</p>
             </div>
-        </div>
+        </a>
 
         <!-- Adobe Editing -->
-        <div class="skills-box reveal delay-4">
+        <a href="qualification.html" class="skills-box reveal delay-4 skill-link">
             <div class="skills-card">
                 <i class="fas fa-palette skills-icon"></i>
                 <h3>Adobe Editing</h3>
                 <p>Advanced image manipulation, retouching, and asset creation using Photoshop.</p>
             </div>
-        </div>
+        </a>
 
         <!-- Data Analysis -->
-        <div class="skills-box reveal delay-5">
+        <a href="qualification.html" class="skills-box reveal delay-5 skill-link">
             <div class="skills-card">
                 <i class="fas fa-chart-line skills-icon"></i>
                 <h3>Data Analysis</h3>
-                <p>Detailed data analysis, using tools like Pandas, and working with spreadsheets.</p>
+                <p>Detailed data analysis using tools like Pandas and working with spreadsheets.</p>
             </div>
-        </div>
+        </a>
 
-        <!-- Web Development -->
-        <div class="skills-box reveal delay-5">
+        <!-- Web Frontend -->
+        <a href="qualification.html" class="skills-box reveal delay-5 skill-link">
             <div class="skills-card">
                 <i class="fas fa-code skills-icon"></i>
                 <h3>Web Frontend</h3>
                 <p>Responsive, interactive web frontends using modern HTML, CSS, and JS.</p>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Services Section Start -->
-<section class="services-section">
-    <span class="sub-title reveal delay-1">WHAT I OFFER</span>
-    <h2 class="reveal delay-1">My Services</h2>
-    
-    <div class="services-grid">
-        <!-- Adobe Photoshop Editing Card -->
-        <a href="services.html" class="services-box reveal delay-2">
-            <div class="services-card">
-                <i class="fas fa-paint-brush services-icon"></i>
-                <h3>Adobe Photoshop Editing</h3>
-                <p>Professional visual content creation including custom flyer design, high-quality image upscaling, creative image editing, and personalized invitation cards.</p>
-                <span class="read-more">View All Services <i class="fas fa-arrow-right"></i></span>
-            </div>
-        </a>
-
-        <!-- Web Development Card -->
-        <a href="services.html" class="services-box reveal delay-3">
-            <div class="services-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Web Development</h3>
-                <p>Building responsive, modern web applications, customized frontend solutions, and smart AI-integrated websites tailored to user requirements.</p>
-                <span class="read-more">View All Services <i class="fas fa-arrow-right"></i></span>
-            </div>
         </a>
     </div>
 </section>
-<!-- Services Section End -->
-
-<footer class="main-footer">
-    <div class="footer-container">
-        <div class="footer-socials">
-            <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/sahan-madhushanka-8b9639414" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/sahanmadhushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-        </div>
+    <!-- Services Section Start -->
+    <section class="services-section">
+        <span class="sub-title reveal delay-1">WHAT I OFFER</span>
+        <h2 class="reveal delay-1">My Services</h2>
         
-            <p class="copyright-text">&copy; <script>document.write(new Date().getFullYear())</script> Sahan Madhushanka. All Rights Reserved.</p>
+        <div class="services-grid">
+            <a href="services.html" class="services-box reveal delay-2">
+                <div class="services-card">
+                    <i class="fas fa-paint-brush services-icon"></i>
+                    <h3>Adobe Photoshop Editing</h3>
+                    <p>Professional visual content creation including custom flyer design, high-quality image upscaling, creative image editing, and personalized invitation cards.</p>
+                    <span class="read-more">View All Services <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <a href="services.html" class="services-box reveal delay-3">
+                <div class="services-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, modern web applications, customized frontend solutions, and smart AI-integrated websites tailored to user requirements.</p>
+                    <span class="read-more">View All Services <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
         </div>
-</footer>
+    </section>
+
+        <!-- Contact CTA Section Start -->
+    <section class="cta-section reveal delay-1">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Let's Build Something Great Together!</h2>
+                <p>Have a project in mind, need technical assistance, or looking for custom software solutions?</p>
+            </div>
+            <div class="cta-btn-wrapper">
+                <a href="contact.html" class="btn-cta">
+                    <span>Contact Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact CTA Section End -->
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1Rx8aYUvWs/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+94762480782" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@lover_music_1?_r=1&_t=ZS-981qdBWFrQ0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/sahanmadushanka67?igsh=MWQ1dHpoZmk5cW16ZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sahan-madhushanka-8b9639414" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sahanmadhushanka" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="copyright-text">&copy; <span id="year"></span> Sahan Madhushanka. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
