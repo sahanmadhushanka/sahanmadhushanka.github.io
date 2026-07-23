@@ -6,7 +6,7 @@
 }
 
 .cta-container {
-    background: linear-gradient(135deg, rgba(20, 30, 48, 0.9), rgba(36, 59, 85, 0.9));
+    background: radial-gradient(circle at 10% 20%, rgba(0, 13, 65, 0.859) 0%, rgb(0, 9, 36) 90%);
     border: 1px solid rgba(0, 255, 234, 0.2);
     border-radius: 20px;
     padding: 40px 50px;

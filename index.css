@@ -135,7 +135,7 @@ body {
 /* Background & Section Setup */
 .hero-section {
     min-height: 100vh;
-    background: radial-gradient(circle at 10% 20%, rgba(52, 0, 67, 0.8) 0%, rgb(0, 8, 31) 90%);
+    background: radial-gradient(circle at 10% 20%, rgba(7, 0, 67, 0.8) 0%, rgb(0, 0, 0) 90%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,14 +224,15 @@ body {
 }
 
 .btn-primary {
-    background: #00b7ff;
+    background: radial-gradient(circle at 10% 20%, rgba(43, 0, 135, 0.859) 0%, rgb(0, 111, 237) 90%);
     color: #fff;
-    box-shadow: 0 4px 15px rgba(37, 222, 235, 0.4);
+    box-shadow: 0 4px 15px rgba(3, 65, 237, 0.4);
 }
 
 .btn-primary:hover {
     background: #00ccff;
     transform: translateY(-2px);
+    color: #000000;
 }
 
 .btn-outline {
@@ -241,8 +242,8 @@ body {
 }
 
 .btn-outline:hover {
-    border-color: #00d2ff;
-    background: rgba(0, 210, 255, 0.05);
+    border-color: #00b3ff;
+    background: rgba(0, 233, 175, 0.05);
 }
 
 .btn-dark {
